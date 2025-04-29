@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/card_margin"
+            >
+
+
+            <TextView
+                android:id="@+id/palmAreaLabel"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_marginStart="8dp"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:text="@string/fertilizerSource"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title"
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fertilizerSource"
+                android:hint="@string/plot_size"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_toRightOf="@+id/palmAreaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/locationLabel"
+                android:text="@string/fertilizer_name"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/palmAreaLabel"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+                android:id="@+id/fertilizer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/palmAreaLabel"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_toRightOf="@+id/locationLabel"
+                android:hint="@string/location"
+                android:paddingLeft="5dp"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dosage_only"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="2dp"
+                android:paddingTop="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/locationLabel"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/dosage"
+                android:layout_toRightOf="@+id/statusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/land_mark"
+                android:layout_below="@id/locationLabel"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/lastAppliedDateLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lastAppliedDate"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="2dp"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:layout_below="@+id/statusLabel"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/lastAppliedDate"
+                android:layout_toRightOf="@+id/lastAppliedDateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lastAppliedDate"
+                android:layout_below="@id/statusLabel"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/applyFertilizerFrequencyTypeeLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/applyFertilizerFrequencyType"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingRight="2dp"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:layout_below="@+id/lastAppliedDateLabel"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/applyFertilizerFrequencyType"
+                android:layout_toRightOf="@+id/lastAppliedDateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/applyFertilizerFrequencyType"
+                android:layout_below="@id/lastAppliedDateLabel"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+            <!-- <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:paddingBottom="@dimen/songs_count_padding_bottom"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="@dimen/album_title_padding"
+            android:textSize="@dimen/songs_count" />-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.calibrage.palm360fa"
+    android:versionCode="24"
+    android:versionName="24.0"> <!--7th march 2024-->
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/palm360_logo"
+        android:label="@string/app_name"git init
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.EdibleOilsubmitscreen"
+            android:exported="false" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.EdibleOilsActivity"
+            android:exported="false" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.TransportplotActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.TransportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.bioproducts_list" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.BioLabProducts" />
+        <activity android:name="in.calibrage.palm360fa.Views.transport.FarmerTransportServiceActivity" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.QRScanner_Activity" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.Transport_service_questioner_farmer" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.Transport_service_questioner_vendor" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.Special_Fee" />
+        <activity android:name="in.calibrage.palm360fa.Views.Activities.unpaidcollections" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.product_list_fert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.CropMaintanceVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.RecommendationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.CollectionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.Godown_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.product_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.RequestListctivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.myRequest_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.Visit_request_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.Quickpay_SummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.Fert_godown_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.pole_godown_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.LabourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.RequestVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.QuickPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.FertilizerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.PoleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.LoanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.LabourRecommendationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.QRScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.Farmar_Login"
+            android:parentActivityName="in.calibrage.palm360fa.Views.Activities.HomeActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.calibrage.palm360fa.Views.Activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.Activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.calibrage.palm360fa.Views.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

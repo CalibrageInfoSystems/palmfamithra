@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+   >
+
+
+    <LinearLayout
+        android:background="@drawable/edtt_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/plotIdLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:text="@string/Vehicle_Type"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/vehicletype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/plotIdLabel"
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:hint=""
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textColor="@color/blacknew" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/othervehicletext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+
+                android:text="@string/otherspecification"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/othertext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_toRightOf="@+id/textView55"
+
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:hint=""
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/palmAreaLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:text="@string/driverpertrans"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold"
+
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/drivertype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicletype"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_toRightOf="@+id/palmAreaLabel"
+
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:hint=""
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/txtDirver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+
+                android:text="@string/driverpayment"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/driverpayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_toRightOf="@+id/textView55"
+
+                android:layout_weight="1"
+                android:fontFamily="@font/hind_semibold"
+                android:hint=""
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+                    <TextView
+                        android:fontFamily="@font/hind_semibold"
+                        android:id="@+id/cluster_Label"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:text="@string/vehiclecurrently"
+                        android:textColor="@color/blacknew"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:fontFamily="@font/hind_semibold"
+                        android:id="@+id/currentlyvehicle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/textView55"
+                        android:hint=""
+
+                        android:paddingLeft="@dimen/album_title_padding"
+                        android:paddingRight="@dimen/album_title_padding"
+                        android:textColor="@color/blacknew"
+                        android:textSize="@dimen/album_title" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+                <TextView
+                    android:id="@+id/status_Label"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:text="@string/willingtorent"
+
+                    android:textColor="@color/blacknew"
+                    android:textSize="@dimen/album_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/willingtorent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_toEndOf="@+id/status_Label"
+                    android:layout_toRightOf="@+id/textView55"
+                    android:fontFamily="@font/hind_semibold"
+                    android:hint=""
+
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textColor="@color/blacknew"
+                    android:textSize="@dimen/album_title" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/intercrop_label"-->
+    <!--            android:fontFamily="@font/hind_semibold"-->
+    <!--            android:layout_width="@dimen/_150dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/status_Label"-->
+    <!--            android:layout_marginTop="@dimen/margin_5"-->
+    <!--            android:paddingLeft="@dimen/album_title_padding"-->
+    <!--            android:paddingRight="@dimen/album_title_padding"-->
+    <!--            android:text="@string/intercrops"-->
+    <!--android:visibility="gone"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="@dimen/album_title"-->
+    <!--            android:textStyle="bold" />-->
+    <!--        <TextView-->
+    <!--            android:fontFamily="@font/hind_semibold"-->
+    <!--            android:id="@+id/intercrop"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/status_Label"-->
+    <!--android:visibility="gone"-->
+    <!--            android:layout_marginTop="@dimen/margin_5"-->
+    <!--            android:layout_toRightOf="@+id/textView55"-->
+    <!--            android:hint=""-->
+    <!--            android:maxLength="4"-->
+    <!--            android:paddingLeft="@dimen/album_title_padding"-->
+    <!--            android:paddingRight="@dimen/album_title_padding"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="@dimen/album_title" />-->
+
+
+        <ImageButton
+            android:layout_margin="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_delete_img"
+            android:id="@+id/imgdelete"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+</RelativeLayout>

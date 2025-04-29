@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#EEEEEE"
+android:gravity="center"
+android:padding="10dp"
+
+    >
+
+<TextView
+    android:text="@string/tap_text"
+    style="@style/Common_textView"
+    android:id="@+id/choose_text"
+    android:layout_gravity="center_horizontal"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:textSize="16dp"
+    android:fontFamily="@font/hind_semibold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/Common_Button"
+    android:id="@+id/english"
+    android:text="@string/btn_en"
+
+    android:layout_margin="3dp"
+
+    />
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/telugu"
+    android:text="@string/btn_te"
+    style="@style/Common_Button"
+    android:layout_margin="3dp"
+    />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/kannada"
+        android:text="@string/btn_kn"
+        style="@style/Common_Button"
+        android:layout_margin="3dp"
+        />
+
+</LinearLayout>

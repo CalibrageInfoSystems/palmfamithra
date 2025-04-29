@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Vehicles"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorOrange_head"/>
+
+    <LinearLayout
+        android:id="@+id/haveownvehicle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_5">
+
+    <TextView
+        android:gravity="bottom"
+        android:fontFamily="@font/hind_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableRight="@drawable/star"
+        android:drawablePadding="5dp"
+        android:text="@string/vehicleType"
+        android:textColor="@color/blacknew"
+        android:textSize="@dimen/album_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/spinnerr_bg"
+        android:elevation="2dp">
+
+        <Spinner
+            android:id="@+id/typeofvehicle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="-1dp"
+            android:background="@null"
+            android:minHeight="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/down_arrow24" />
+    </RelativeLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_othertypevehicle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edtt_bg"
+        android:hint="@string/pleasespecify"
+        android:inputType="text"
+        android:maxLength="1000"
+        android:fontFamily="@font/hind_semibold"
+        android:paddingLeft="15dp"
+        android:singleLine="false"
+        android:cursorVisible="true"
+        android:textColor="@color/blacknew"
+        android:textColorHint="@color/half_black"
+        android:textSize="@dimen/album_title"></EditText>
+
+    <TextView
+        android:fontFamily="@font/hind_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableRight="@drawable/star"
+        android:drawablePadding="5dp"
+        android:text="@string/driverforTransportation"
+        android:textColor="@color/blacknew"
+        android:textSize="@dimen/album_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinnerr_bg"
+        android:elevation="2dp">
+
+        <Spinner
+            android:id="@+id/driverforTransportation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="-1dp"
+            android:background="@null"
+            android:minHeight="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/down_arrow24" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/hiredriverlyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_5"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/paymentlyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:id="@+id/amountlyt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_5">
+
+                <TextView
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:drawableRight="@drawable/star"
+                    android:drawablePadding="5dp"
+                    android:text="@string/driverpayment"
+                    android:textColor="@color/blacknew"
+                    android:textSize="@dimen/album_title" />
+
+                <EditText
+                    android:id="@+id/driverpaymentamount_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin_10"
+                    android:background="@drawable/edtt_bg"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/Rs"
+                    android:maxLength="6"
+                    android:fontFamily="@font/hind_semibold"
+                    android:paddingLeft="15dp"
+                    android:singleLine="false"
+                    android:cursorVisible="true"
+                    android:textColor="@color/blacknew"
+                    android:textColorHint="@color/half_black"
+                    android:textSize="@dimen/album_title"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:id="@+id/amountper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_5">
+
+                <TextView
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:drawableRight="@drawable/star"
+                    android:drawablePadding="5dp"
+                    android:text="@string/Amountper"
+                    android:textColor="@color/blacknew"
+                    android:textSize="@dimen/album_title" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinnerr_bg"
+                    android:elevation="2dp">
+
+                    <Spinner
+                        android:id="@+id/driverpaymentper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@null"
+                        android:minHeight="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:padding="@dimen/_8dp"
+                        android:src="@drawable/down_arrow24" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:fontFamily="@font/hind_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableRight="@drawable/star"
+        android:drawablePadding="5dp"
+        android:text="@string/vehiclecurrently"
+        android:textColor="@color/blacknew"
+        android:textSize="@dimen/album_title" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:layout_margin="6dp"-->
+
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/spinnerr_bg"-->
+<!--        android:elevation="2dp">-->
+
+
+<!--        <Spinner-->
+<!--            android:gravity="center"-->
+<!--            android:textAlignment="textStart"-->
+<!--            android:id="@+id/isvehicleonRent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="@dimen/margin_10"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:background="@null"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:entries="@array/yesno"-->
+<!--            tools:ignore="RtlCompat" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:padding="@dimen/_8dp"-->
+<!--            android:src="@drawable/down_arrow24" />-->
+<!--    </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/spinnerr_bg"
+            android:elevation="2dp">
+
+            <Spinner
+                android:id="@+id/isvehicleonRent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="-1dp"
+                android:background="@null"
+                android:minHeight="0dp"
+                android:entries="@array/yesno"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/down_arrow24" />
+        </RelativeLayout>
+    <TextView
+        android:fontFamily="@font/hind_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableRight="@drawable/star"
+        android:drawablePadding="5dp"
+        android:text="@string/willingtorent"
+        android:textColor="@color/blacknew"
+        android:textSize="@dimen/album_title" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/spinnerr_bg"-->
+<!--        android:elevation="2dp">-->
+
+<!--        <Spinner-->
+
+<!--            android:gravity="center"-->
+<!--            android:textAlignment="textStart"-->
+<!--            android:id="@+id/vwillingtoRent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="@dimen/margin_10"-->
+<!--            android:layout_marginTop="-1dp"-->
+<!--            android:background="@null"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:entries="@array/yesno"-->
+<!--            tools:ignore="RtlCompat" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:padding="@dimen/_8dp"-->
+<!--            android:src="@drawable/down_arrow24" />-->
+<!--    </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/spinnerr_bg"
+            android:elevation="2dp">
+
+            <Spinner
+                android:id="@+id/vwillingtoRent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="-1dp"
+                android:background="@null"
+                android:minHeight="0dp"
+                android:entries="@array/yesno"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/down_arrow24" />
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/addvehicleBtn"
+           android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Add"
+            style="@style/Common_Button"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/Common_Button"
+            android:text="Cancel"/>
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

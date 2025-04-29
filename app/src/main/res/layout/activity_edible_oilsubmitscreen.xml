@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".views.actvity.EdibleOilsubmitscreen">
+    <!--head toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorOrange_head"
+        android:visibility="visible"
+        app:title="Product Request">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_toRightOf="@+id/back"
+                android:text="@string/product_req"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+            <ImageView
+                android:layout_weight="0.2"
+                style="@style/Common_image"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/margin_5"
+                android:id="@+id/home_btn"
+                android:src="@drawable/home" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/hind_semibold"
+                        android:id="@+id/txt_Payment_mode"
+                        style="@style/Common_textView_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="@string/payment_mode"
+                        android:drawableRight="@drawable/star"
+                        android:drawablePadding="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_dark_gray" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+
+                        android:background="@drawable/spinner_bgg"
+                        android:elevation="2dp">
+
+                        <Spinner
+                            android:id="@+id/paymentSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:minHeight="0dp"
+                            android:layout_marginLeft="@dimen/margin_10" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="@dimen/_8dp"
+                            android:src="@drawable/ic_arrow_drop_down" />
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/Common_textView_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="@string/product_details"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_dark_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/products_recy"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:layout_weight="0.5"
+                            android:layout_marginTop="3dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:background="@drawable/line_bg" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/memo_background">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/txtDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/hind_semibold"
+                                    android:textSize="15sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/colorOrange"
+                                    android:text="Note "
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <TextView
+                                    android:fontFamily="@font/hind_semibold"
+                                    android:id="@+id/txt_msg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14dp"
+
+                                    android:text="@string/note"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:background="@drawable/line_bg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/tvtext_item_four"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dot"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/tvtext_item_six"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/gst_amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotg"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/gst_amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/textcgst"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/cgst_amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotcg"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/cgst_amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/text_sgst"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/sgst_amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotsg"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sgst_amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+                                <TextView
+                                    android:id="@+id/text_final"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/total_amt"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotf"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/final_amount_gst"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/tvtext_item_four"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/transamount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dot"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/transamount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/ttextcgst"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/tcgst_amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotcg"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tcgst_amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/text_sgst"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/tsgst_amount"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotsg"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tsgst_amount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+                                <TextView
+                                    android:id="@+id/text_final"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/trnstotal_amt"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotf"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/totaltransportamount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="@drawable/devider_line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/plotIdLabel"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/subsidy_amt"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dots"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/subcdamount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.4dp"
+                                android:background="@drawable/line_bg" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/payble_label"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:text="@string/amount_payble"
+                                    android:textAlignment="textStart" />
+
+
+                                <TextView
+                                    android:id="@+id/dotp"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textAlignment="textStart"
+                                    android:text=":"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/paybleamount"
+                                    style="@style/Common_textView"
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.4dp"
+                                android:background="@drawable/line_bg" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            style="@style/Common_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginBottom="@dimen/_8dp"
+                            android:text="@string/submit" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape"
+    >
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/backlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:src="@drawable/ic_left" />
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/home"
+                android:textColor="#ff0000ff" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/back"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/hind_semibold"
+                android:text="@string/quickPay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backlinear"
+        android:orientation="vertical"
+        android:layout_weight="0.95"
+        android:weightSum="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quick_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hed_text"
+            android:scrollbarSize="3dp"
+
+
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@color/colorPrimary"
+            android:scrollbars="vertical"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_text"
+            android:fontFamily="@font/hind_semibold"
+            android:layout_marginTop="450dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text="@string/no_unpaid_collections"
+            android:textColor="@color/colorOrange"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/Common_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_below="@+id/quick_recycler_view"
+        android:paddingLeft="@dimen/margin_10"
+        android:layout_margin="@dimen/margin_5"
+        android:visibility="gone"
+        android:text="@string/request_rise" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="6dp"
+
+        android:orientation="vertical"
+        android:background="@drawable/memo_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind_semibold"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorOrange"
+                android:text="Note "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:fontFamily="@font/hind_semibold"
+                android:id="@+id/txt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14dp"
+
+                android:text="@string/unpaid_note"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/border.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/button_bg.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/button_bg2.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/button_bg3.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/button_bg_disable.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/fert_baground.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/ic_success.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/line_bg.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/notification_white.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/shape.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/star.xml" value="0.335" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/tab_color_selector.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/drawable/white_baground.xml" value="0.2905" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_farmer_transport_service.xml" value="0.24230072463768115" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_fert_godown_list.xml" value="0.18541666666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_home.xml" value="0.17603850050658562" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_labour.xml" value="0.3619791666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_labour_recommendations.xml" value="0.3619791666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_loan.xml" value="0.17603850050658562" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_pole_godown_list.xml" value="0.3619791666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_product_list_fert.xml" value="0.3619791666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_quick_pay.xml" value="0.3609375" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_transport.xml" value="0.25" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_transportplot.xml" value="0.25" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/activity_visit_request_.xml" value="0.17603850050658562" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/donthavevehicleadapter.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/farmerselection.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/haveownvehicle.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/product_list_fert.xml" value="0.18541666666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/recommendation_list_item.xml" value="0.22" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/signature_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/spinneritem.xml" value="0.3609375" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/transportplot_list_item.xml" value="0.3465" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/vehicledata.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/vehiclehirecharges.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/vehiclepriceslyt.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/villagedestinationrecyclerview.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/Roja/Jan10_newClone/3f_fa_akshaya/app/src/main/res/layout/visit_req_list.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="zulu-13" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

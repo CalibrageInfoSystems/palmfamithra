@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/lang_baground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_below="@+id/lin_collection_ids"
+                    android:background="@drawable/line_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_amount"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3sp"
+                    android:elevation="2dp"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/btn_dialog"
+                        android:layout_width="@dimen/_100dp"
+                        android:layout_height="@dimen/_30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="6dp"
+
+
+                        android:background="@drawable/button_bg"
+
+                        android:elevation="2dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ok"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_one"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_zero"
+                    android:layout_marginStart="6dp"
+
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/request_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot1"
+
+                        android:text="@string/comments"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_one"
+                    android:layout_marginStart="6dp"
+                    android:orientation="horizontal"
+
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/plotIdLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text="@string/requestCodeLabel"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dot2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="   :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/driverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot2"
+                        android:hint=""
+                        android:text=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lin_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_two"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:elevation="2dp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/plot_code"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/plot_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toEndOf="@+id/dot3"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_toRightOf="@+id/dot3"
+
+                        android:hint=""
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_three"
+
+                    android:layout_marginTop="3sp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/plot_size"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/plot_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot4"
+                        android:hint=""
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_eight"
+
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_marginEnd="2dp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/totalbunches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/status"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dot5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot5"
+                        android:hint=""
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lin_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_four"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/gross_weighrt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/village"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"   android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/village"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot10"
+                        android:hint=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/new_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_ten"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tare_weightt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/labour_leader"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/leader_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot11"
+                        android:hint=""
+                        android:text=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_four_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_data"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/net_weightt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/starttDate"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pref_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot12"
+                        android:hint=""
+                        android:text=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_four_new"
+
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/dateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text="@string/serviceType"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dotd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/service_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotd"
+                        android:hint=""
+                        android:text=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_date"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/comt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/job_done"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotcom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/job_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotcom"
+                        android:hint=""
+                        android:fontFamily="@font/hind_semibold"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_comments"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/operatorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/labour_duration"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pack_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot8"
+                        android:hint=""
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/date_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_five"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/lab_assigndate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/assign_date"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/dotdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_assign_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotdate"
+                        android:hint=""
+                        android:maxLength="10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/pin_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_label"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+android:visibility="gone"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/lab_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/pinn"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/dotpin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotpin"
+                        android:hint=""
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lin_collection_ids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pin_label"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/coll_label"
+                        style="@style/Common_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                    <TextView
+                        android:id="@+id/dotcol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/payment_details"
+                        android:textColor="@color/colorOrange"
+
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/lin_collection_ids"
+                    android:id="@id/prunning_label"
+
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/lin_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/accept_bumches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/pru_amountt"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:paddingLeft="20dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prun_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot6"
+                            android:hint=""
+                            android:text=""    android:fontFamily="@font/hind_semibold"
+
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lin_new1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lin_six"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/lable_trea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="1dp"
+                            android:text="@string/num_trees"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dotn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/trees_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dotn1"
+                            android:hint=""
+                            android:text=""
+                            android:fontFamily="@font/hind_semibold"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lin_new2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_below="@+id/lin_new1"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/pr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:text="@string/Prunning_amount"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dotn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:paddingLeft="20dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prun_total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_toRightOf="@+id/dotn2"
+                            android:hint=""
+                            android:text=""
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+
+                    android:id="@+id/harvest_label"
+                    android:layout_below="@+id/prunning_label"
+
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/lin_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/rejected_buncjhes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/harv_amountt"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:textSize="@dimen/_14dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/harv_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot7"
+                            android:hint=""
+                            android:text=""
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"/>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/label_netweight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lin_seven"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/netweight_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/net_weight_mt"
+                            android:textColor="@color/white"
+
+                            android:textSize="@dimen/_14dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dotnet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/netweight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dotnet"
+                            android:hint=""
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/label_harv_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/label_netweight"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/harv_amount_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/harvesting_amount"
+                            android:textColor="@color/white"
+
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dotharv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/harv_amountt"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dotharv"
+                            android:hint=""
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/prunning_intercrop_label"
+                    android:layout_below="@+id/harvest_label"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/prunningintercrop_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/intercrop_prun_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/incrop_prunning"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_intercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:fontFamily="@font/hind_semibold"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pruning_intercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot_intercrop"
+                            android:hint=""
+                            android:text=""    android:fontFamily="@font/hind_semibold"
+
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/trees_intercrop_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prunningintercrop_label"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/intercrop_trees_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/num_intercrop"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_treeasintercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prun_intercrop_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_toRightOf="@+id/dot_treeasintercrop"
+                            android:hint=""
+                            android:text=""
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/amount_intercrop_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trees_intercrop_label"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:elevation="2dp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/intercrop_amount_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:text="@string/pru_intercrop_amountt"
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_amountintercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:text="     :"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/intercrop_amount"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot_amountintercrop"
+                            android:hint=""
+                            android:text=""
+
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/prunning_intercrop_label"
+                    android:id="@+id/harvest_inter_label"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/harv_inter_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/harv_intercrop_cost_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/harv_inter_amountt"
+                            android:textColor="@color/white"
+
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_intercrop_harv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/harvest_intercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot_intercrop_harv"
+                            android:hint=""
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/harv_inter_weight_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harv_inter_label"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/harv_intercrop_weight_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/harv_intercrop_netweight"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textSize="@dimen/_14dp"    android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_intercrop_weight_harv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/harv_weight_intercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind_semibold"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot_intercrop_weight_harv"
+                            android:hint=""
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/harv_intercrop_amount_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/harv_inter_weight_label"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="3sp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/harv_inter_amount_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1sp"
+                            android:text="@string/harv_intercrop_amout"
+                            android:textColor="@color/white"    android:fontFamily="@font/hind_semibold"
+
+                            android:textSize="@dimen/_14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dot_amount_harv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1sp"
+                            android:text="     :"
+                            android:textColor="@color/white"
+                            android:paddingLeft="20dp"
+                            android:textSize="@dimen/_14dp"
+                            android:fontFamily="@font/hind_semibold"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/harv_amt_intercrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="1sp"
+                            android:layout_toRightOf="@+id/dot_amount_harv"
+                            android:hint=""
+                            android:fontFamily="@font/hind_semibold"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/per_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/harvest_inter_label"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/service_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/service_chargeper"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotserv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/service_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotserv"
+                        android:hint=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/amount_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/per_service"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/service_amount_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/service_amount"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotserviceamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/service_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotserviceamount"
+                        android:hint=""    android:fontFamily="@font/hind_semibold"
+
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/disc_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount_service"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/hind_semibold"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/disc_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/disc_package"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotdisc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/discount_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotdisc"
+                        android:hint=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/amount_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/disc_label"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/discount_amount_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/disc_price"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotdiscountamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/discount_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotdiscountamount"
+                        android:hint=""
+                        android:fontFamily="@font/hind_semibold"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/label_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount_discount"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="3sp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/amount_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1sp"
+                        android:text="@string/total_amt"
+
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text="     :"
+                        android:textColor="@color/white"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/_14dp"
+
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dotamount"
+                        android:hint=""
+
+                        android:fontFamily="@font/hind_semibold"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

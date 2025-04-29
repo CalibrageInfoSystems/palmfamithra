@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/My_request"
+        android:enabled="true"
+        android:fontFamily="@font/hind_semibold"
+        android:icon="@drawable/ic_request"
+        android:visible="false"
+        android:title="@string/requests"
+        />
+    <item
+        android:id="@+id/languageTitle"
+        android:fontFamily="@font/hind_semibold"
+        android:enabled="true"
+        android:icon="@drawable/ic_lang"
+        android:title="@string/chooselanguage"/>
+    <item
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/log_off"
+        android:fontFamily="@font/hind_semibold"
+        android:id="@+id/nav_logout"/>
+    <item
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/farmer_log_off"
+        android:visible="false"
+        android:fontFamily="@font/hind_semibold"
+        android:id="@+id/nav_farmer_logout"/>
+</menu>

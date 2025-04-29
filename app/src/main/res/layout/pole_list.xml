@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1">
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="4dp"
+
+            android:layout_margin="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <!--
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:background="@color/bkg_card"
+                            android:text="contact det"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/white"
+                            android:textSize="14dp"/>-->
+
+                <TextView
+                    android:id="@+id/requestCodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/requestCodeLabel"
+                    android:textSize="@dimen/album_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/requestCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/requestCodeLabel"
+                    android:layout_marginLeft="@dimen/_150dp"
+                    android:textColor="@color/colorOrange_head"
+                    android:fontFamily="@font/hind_semibold"
+                    android:text="Email"
+                    android:textSize="@dimen/album_title" />
+
+
+                <TextView
+                    android:id="@+id/Godown_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/requestCodeLabel"
+                    android:text="@string/Godown_name"
+                    android:textSize="@dimen/album_title"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/godown_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/Godown_Label"
+                    android:layout_marginLeft="@dimen/_150dp"
+
+                    android:text="Email"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_below="@+id/requestCodeLabel"
+                    android:textSize="@dimen/album_title" />
+
+                <TextView
+                    android:id="@+id/reqCreatedDateLabel"
+                    android:text="@string/reqDatee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/godown_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hind_semibold"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/album_title"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reqCreatedDate"
+                    android:text="Email"
+                    android:layout_below="@id/godown_name"
+                    android:textSize="@dimen/album_title"
+                    android:layout_marginLeft="@dimen/_150dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_alignBaseline="@id/reqCreatedDateLabel"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusTypeLabel"
+                    android:text="@string/status"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/hind_semibold"
+                    android:textSize="@dimen/album_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_below="@id/reqCreatedDateLabel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/statusType"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/statusTypeLabel"
+                    android:layout_marginLeft="@dimen/_150dp"
+                    android:text="Email"
+                    android:textSize="@dimen/album_title" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/approveDateLabel"
+                    android:text="@string/total_amt"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/album_title"
+                    android:fontFamily="@font/hind_semibold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/statusTypeLabel"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/approveDateLabel"
+                    android:layout_marginLeft="@dimen/_150dp"
+                    android:layout_marginRight="0dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:text="Email"
+                    android:textSize="@dimen/album_title" />
+
+                <ImageView
+                    android:id="@+id/show_more"
+                    android:layout_width="@dimen/ic_album_overflow_width"
+                    android:layout_height="@dimen/ic_album_overflow_height"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="-10dp"
+                    android:fontFamily="@font/hind_semibold"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusLabel"
+                    android:text="@string/paymentMode"
+                    android:layout_below="@id/approveDateLabel"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/album_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/paymentMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_alignBaseline="@id/statusLabel"
+                    android:layout_marginLeft="@dimen/_150dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Email"
+
+                    android:textSize="@dimen/album_title" />
+
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:fontFamily="@font/hind_semibold"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/statusLabel"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/cancel"
+                    android:gravity="center"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:textColor="@color/Red"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/details"
+                    android:background="@color/light_gray2"
+                    android:layout_below="@id/paymentMode">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        style="@style/Common_textView"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/_16dp"
+                        android:textColor="@color/colorOrange"
+                        android:text="@string/complete_details">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

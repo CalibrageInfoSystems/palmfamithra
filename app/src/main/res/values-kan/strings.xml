@@ -1,0 +1,650 @@
+<resources>
+
+
+    <string name="app_name">3 ಎಫ್ ಅಕ್ಷಯ</string>
+    <string name="home">ಹೋಮ್</string>
+    <string name="profile">ಪ್ರೊಫೈಲ್</string>
+    <string name="requests">ವಿನಂತಿಗಳು</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chooselanguage">ಭಾಷೆಯನ್ನು ಆರಿಸಿ</string>
+    <string name="choose_language_str">ಭಾಷೆಯನ್ನು ಆರಿಸಿ</string>
+    <string name="telugu_str">తెలుగు</string>
+
+    <string name="kannada_str">ಕನ್ನಡ</string>
+    <string name="english_str">English</string>
+    <string name="ok">ಸರಿ</string>
+    <string name="cancel">ರದ್ದುಮಾಡಿ</string>
+
+    <string name="terms_agree">ದಯವಿಟ್ಟು ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ಒಪ್ಪಿಕೊಳ್ಳಿ</string>
+
+
+    <string name="otp_desc">6 ಅಂಕಿಗಳ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ ನಿಮ್ಮ ನೋಂದಾಯಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ (ಗಳನ್ನು) ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="submit">ಸಲ್ಲಿಸು</string>
+
+    <string name="view">ವೀಕ್ಷಣೆಗಳು</string>
+
+    <string name="recommendations">ಶಿಫಾರಸುಗಳು</string>
+
+
+    <string name="req_services">ಸೇವೆಗಳನ್ನು ವಿನಂತಿಸಿ</string>
+
+
+    <string name="confirm_req">ಖಚಿತಪಡಿಸಿ ವಿನಂತಿ</string>
+    <string name="pole">ಉಪಕರಣ</string>
+    <string name="fertilizer">ಗೊಬ್ಬರ</string>
+    <string name="loan">ಸಾಲ</string>
+    <string name="quickPay">ಕ್ವಿಕ್‌ಪೇ ವಿನಂತಿ</string>
+    <string name="quick">ತ್ವರಿತ ಪಾವತಿ</string>
+    <string name="visit">ತೋಟದ ಭೇಟಿಯ ವಿನಂತಿ</string>
+    <string name="req_visit">ವಿನಂತಿಯನ್ನು ಭೇಟಿ ಮಾಡಿ</string>
+    <string name="learning">ಕಲಿಕೆ</string>
+    <string name="time_peroid">ಸಮಯದ ಅವಧಿ</string>
+
+
+    <string name="from_date">ದಿನಾಂಕ *</string>
+
+    <string name="to_date">ದಿನಾಂಕ *</string>
+
+    <string name="from_month">ತಿಂಗಳಿನಿಂದ *</string>
+
+    <string name="to_month">ತಿಂಗಳಿಗೆ *</string>
+
+    <string name="date">ಪ್ರಾರಂಭ ದಿನಾಂಕ</string>
+
+
+    <string name="req_loan">ಸಾಲ ವಿನಂತಿ</string>
+    <string name="plot_id">ಪ್ಲಾಟ್ ಐಡಿ</string>
+
+
+    <string name="code">ಕೋಡ್</string>
+
+    <string name="net_weight">ನಿವ್ವಳ ತೂಕ</string>
+
+    <string name="location">ಸ್ಥಳ</string>
+    <string name="locationn">ಸ್ಥಳ   :</string>
+
+
+
+
+    <!--    collections-->
+    <string name="collection">ಎಫ್ ಎಫ್ ಬಿ ಸಂಗ್ರಹಣೆಯ ವಿವರಗಳು</string>
+    <string name="collectionsWeight">ಒಟ್ಟು ನಿವ್ವಳ ತೂಕ </string>
+    <string name="collectionsCount">ಒಟ್ಟು ಸಂಗ್ರಹಗಳು</string>
+    <string name="unPaidCollectionsWeight">ಪಾವತಿಸದ ಸಂಗ್ರಹಗಳ ತೂಕ </string>
+    <string name="paidCollectionsWeight">ಪಾವತಿಸಿದ ಸಂಗ್ರಹಗಳ ತೂಕ</string>
+    <string name="no_collections_found">ಯಾವುದೇ ಸಂಗ್ರಹಣೆಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="unpaidCollection">ಪಾವತಿಸದ ಸಂಗ್ರಹಗಳು</string>
+    <string name="no_unpaid_collections">ಪಾವತಿಸದ ಸಂಗ್ರಹಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="date_label">ದಿನಾಂಕ</string>
+    <string name="collection_id">ಸಂಗ್ರಹ ಐಡಿ</string>
+    <string name="weight">ತೂಕ</string>
+    <string name="cc">ಸಂಗ್ರಹ ಕೇಂದ್ರ</string>
+    <string name="status">ಸ್ಥಿತಿ</string>
+    <string name="driver_name">ಚಾಲಕನ ಹೆಸರು</string>
+    <string name="vehicle_Number">ವಾಹನ ಸಂಖ್ಯೆ</string>
+    <string name="collectionCenter">ಸಂಗ್ರಹ ಕೇಂದ್ರ</string>
+    <string name="grossWeight">ಒಟ್ಟು ತೂಕ</string>
+    <string name="tareWeight">ಖಾಲಿ ತೂಕ</string>
+    <string name="totalBunches">ಒಟ್ಟು ಬಂಚ್‌ಗಳು</string>
+    <string name="acceptedBunches">ಸ್ವೀಕರಿಸಿದ ಬಂಚ್ಗಳು</string>
+    <string name="rejectedBunches">ತಿರಸ್ಕರಿಸಿದ ಬಂಚ್ಗಳು</string>
+    <string name="operatorName"> 3 ಎಫ್ ಆಯಿಲ್ ಪಾಮ್\nಸಂಗ್ರಹ ಅಧಿಕಾರಿ ಹೆಸರು</string>
+    <string name="receiptImg">ರಶೀದಿ</string>
+    <string name="recept">ರಶೀದಿಯನ್ನು ನೋಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="datevalidation">ದಿನಾಂಕದಿಂದ ನಮೂದಿಸಿ ದಿನಾಂಕಕ್ಕಿಂತ ಕಡಿಮೆ</string>
+    <string name="enter_Date">ದಯವಿಟ್ಟು ದಿನಾಂಕ ಮತ್ತು ದಿನಾಂಕದಿಂದ ನಮೂದಿಸಿ</string>
+
+    <!--  Payments  -->
+    <string name="no_payments_found">ಯಾವುದೇ ಪಾವತಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+<!--    <string name="grr">ಎಫ್‌ಎಫ್‌ಬಿಗೆ ಪಾವತಿ (ರೂ.)</string>-->
+    <string name="payments">ರೈತರ ಪಾಸ್ ಬುಕ್</string>
+    <string name="payment_summary">ಪಾವತಿ ಸಾರಾಂಶ</string>
+    <string name="bank_details">ಬ್ಯಾಂಕ್ ವಿವರಗಳು</string>
+    <string name="bank_holder"> ಖಾತೆದಾರರ ಹೆಸರು</string>
+    <string name="bank_name">ಬ್ಯಾಂಕ್ ಹೆಸರು</string>
+    <string name="account_no">ಖಾತೆ ಸಂಖ್ಯೆ</string>
+    <string name="branch_name">ಶಾಖೆಯ ಹೆಸರು</string>
+    <string name="ifsc">ಐಎಫ್‌ಎಸ್‌ಸಿ ಕೋಡ್</string>
+    <string name="next">ಮುಂದೆ</string>
+    <string name="trans">ನೇರ ರೈತ ಸಾರಿಗೆ ಮರುಪಾವತಿ</string>
+    <string name="ffb_qty">ಒಟ್ಟು ಎಫ್ ಎಫ್ ಬಿ ಪ್ರಮಾಣ (MT)</string>
+    <string name="ffb">ಎಫ್‌ಎಫ್‌ಬಿ ಕ್ಯೂಟಿ (ಎಂಟಿ)</string>
+    <string name="adhoc_rate">ಪ್ರತಿ ಎಂಟಿಗೆ ಅಧೋಕ್ ದರ (ರೂ.)</string>
+    <string name="invoice_rate">ಪ್ರತಿ ಎಂಟಿಗೆ ಸರಕುಪಟ್ಟಿ ದರ (ರೂ.)</string>
+    <string name="memo">ಮೆಮೊ</string>
+    <string name="amount">ಮೊತ್ತ (ರೂ)</string>
+    <string name="download">ಡೌನ್ಲೋಡ್ ಮಾಡಿದ ಫೈಲುಗಳು</string>
+    <string name="click_downlad">ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="totalBalance">ಮುಕ್ತಾಯದ ಬಾಕಿ (ರೂ)</string>
+    <string name="balance">ಬಾಕಿ (ರೂ)</string>
+    <string name="gr">ಜಿಆರ್ ಮೊತ್ತ (ರೂ)</string>
+    <string name="adjusted">ಹೊಂದಿಸಲಾಗಿದೆ (ರೂ)</string>
+    <string name="descriptionn">ವಿವರಣೆ </string>
+    <string name="trans_charges"> ಸಾರಿಗೆ \ n ಚಾರ್ಜಸ್/ಟನ್ (ರೂ)</string>
+    <string name="no_trans_found">ನೇರ ರೈತ ಸಾರಿಗೆ ಮರುಪಾವತಿ ಕಂಡುಬಂದಿಲ್ಲ</string>
+
+    <!--    Crop mainatanance vists-->
+    <!--    Crop Maintenance Visits -->
+    <string name="recommendationss">ಬೆಳೆ ನಿರ್ವಹಣೆ ಭೇಟಿಗಳು</string>
+    <string name="plot_code">ಪ್ಲಾಟ್ ಕೋಡ್</string>
+    <string name="plot_size">ಪ್ಲಾಟ್ ಗಾತ್ರ</string>
+    <string name="village">ಗ್ರಾಮ</string>
+    <string name="landmark">ಹೆಗ್ಗುರುತು</string>
+    <string name="yop">ನಾಟಿ ಮಾಡಿದ ವರ್ಷ</string>
+    <string name="treesAppearance">ಮರಗಳ ಗೋಚರತೆ</string>
+    <string name="treeGrowth">ಮರದ ಬೆಳವಣಿಗೆ</string>
+    <string name="treeHeight">ಮರದ ಎತ್ತರ</string>
+    <string name="fruitColor">ಹಣ್ಣಿನ ಬಣ್ಣ</string>
+    <string name="fruitSize">ಹಣ್ಣಿನ ಗಾತ್ರ</string>
+    <string name="fruitHyegiene">ಹಣ್ಣಿನ ನೈರ್ಮಲ್ಯ</string>
+    <string name="plantationType">ತೋಟದ ಪ್ರಕಾರ</string>
+    <string name="health_crop">ತೋಟದ ವಿವರಗಳ ಆರೋಗ್ಯ</string>
+    <string name="uprrot_crop">ಬೇರುಸಹಿತ ವಿವರಗಳು</string>
+    <string name="spalingPlanted">ಸಸಿಗಳನ್ನು ನೆಡಲಾಗಿದೆ</string>
+    <string name="prevPalmsCount">ಹಿಂದಿನ ಮರಗಳ ಎಣಿಕೆ</string>
+    <string name="plamsCount">ಪ್ರಸ್ತುತ ಮರಗಳ ಎಣಿಕೆ</string>
+    <string name="isTreesMissing">ಕಾಣೆಯಾದ ಮರಗಳು</string>
+    <string name="missingTreesCount">ಕಾಣೆಯಾದ ಮರಗಳು</string>
+    <string name="reasonType">ಮರಗಳು ಕಾಣೆಯಾಗಲು ಕಾರಣ</string>
+    <string name="expectedPlamsCount">ನಿರೀಕ್ಷಿತ ಪಾಮ್ಸ್ ಎಣಿಕೆ</string>
+    <string name="last_date">ಕೊನೆಯ ಭೇಟಿಯ ದಿನಾಂಕ</string>
+    <string name="Frequency">ಆವರ್ತನ</string>
+    <string name="static_data">ಸಡಿಲವಾದ ಹಣ್ಣುಗಳನ್ನು ನೆಲದ ಮೇಲೆ ನೋಡಿದಾಗ ಉತ್ತಮ ಇಳುವರಿಗಾಗಿ , ಪ್ರತಿ ಹತ್ತು ದಿನಗಳಿಗೊಮ್ಮೆ ಕೊಯ್ಲು ಮಾಡಲು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ.</string>
+    <string name="Frequency_harvest"> ಹಾರ್ವೆಸ್ಟ್ ನಂತರದ ದಿನಗಳು</string>
+    <string name="NutrientDeficiencyName">ಪೋಷಕಾಂಶಗಳ ಕೊರತೆಯ ಹೆಸರು</string>
+    <string name="Nameofchemicalapplied">ರಾಸಾಯನಿಕ ಅನ್ವಯಿಸಿದ ಹೆಸರು</string>
+    <string name="registeredDate">ನೋಂದಾಯಿತ ದಿನಾಂಕ</string>
+    <string name="Pest">ಕೀಟ</string>
+    <string name="pestChemicals">ಕೀಟ ರಾಸಾಯನಿಕಗಳು</string>
+    <string name="RecommendedChemical">ಶಿಫಾರಸು ಮಾಡಿದ ರಾಸಾಯನಿಕ</string>
+    <string name="disease">ರೋಗ</string>
+    <string name="pest">ಕೀಟ ವಿವರಗಳು</string>
+    <string name="deases">ರೋಗದ ವಿವರಗಳು</string>
+    <string name="nut_repo">ಪೋಷಕಾಂಶಗಳ ಕೊರತೆಯ ವಿವರಗಳು</string>
+    <string name="fert_rec">ರಸಗೊಬ್ಬರ ಶಿಫಾರಸು ವಿವರಗಳು</string>
+    <string name="irrigation">ನೀರಾವರಿ ವಿವರಗಳು</string>
+    <string name="irrigation_name">ನೀರಾವರಿ ಹೆಸರು</string>
+    <string name="updated_by">ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="updated_date">ನವೀಕರಿಸಿದ ದಿನಾಂಕ</string>
+    <string name="inter_crop">ಇಂಟರ್ ಕ್ರಾಪ್ ವಿವರಗಳು</string>
+    <string name="fertilizer_crop">ರಸಗೊಬ್ಬರಗಳ ವಿವರಗಳು</string>
+    <string name="fertilizerSource">ರಸಗೊಬ್ಬರ ಮೂಲ</string>
+    <string name="fertilizer_name">ರಸಗೊಬ್ಬರ ಹೆಸರು</string>
+    <string name="lastAppliedDate">ಕೊನೆಯ ಅನ್ವಯಿಕ ದಿನಾಂಕ</string>
+    <string name="applyFertilizerFrequencyType">ರಸಗೊಬ್ಬರ ಆವರ್ತನವನ್ನು ಅನ್ವಯಿಸಿ</string>
+
+
+    <!--   Labour  -->
+    <string name="labour_lable">ಕಾರ್ಮಿಕರ ವಿನಂತಿ</string>
+    <string name="select_labour_type">ಕಾರ್ಮಿಕ ಸೇವೆ</string>
+    <string name="startDate">ಆದ್ಯತೆಯ ದಿನಾಂಕ</string>
+    <string name="starttDate">ಆದ್ಯತೆಯ ದಿನಾಂಕ</string>
+    <string name="labour">ಕಾರ್ಮಿಕ ವಿನಂತಿ</string>
+    <string name="labour_duration">ಪ್ಯಾಕೇಜ್ </string>
+    <string name="comments">ಪ್ರತಿಕ್ರಿಯೆಗಳು</string>
+    <string name="i_have_agree">ನಾನು ಒಪ್ಪುತ್ತೇನೆ</string>
+    <string name="terms_conditions">ದರ ಚಾರ್ಟ್ - ನಿಯಮಗಳು &amp;  ಷರತ್ತುಗಳು</string>
+    <string name="submit_req">ವಿನಂತಿಯನ್ನು ಸಲ್ಲಿಸಿ</string>
+    <string name="harv_amount">ಕೊಯ್ಲು ಮೊತ್ತ/ಟನ್ (ರೂ)</string>
+    <string name="pru_amount">ಸಮರುವಿಕೆಯನ್ನು ಮೊತ್ತ/ಮರ (ರೂ)</string>
+    <string name="success_labour">ಕಾರ್ಮಿಕ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ</string>
+    <string name="service">ಸೇವೆಯ ಶುಲ್ಕ </string>
+    <string name="charge">% ಹೆಚ್ಚುವರಿ. \ n ಮುಂದಿನ ಪಾವತಿ ಚಕ್ರದಲ್ಲಿ ಶುಲ್ಕಗಳನ್ನು ಎಫ್‌ಎಫ್‌ಬಿ ಪಾವತಿಯಿಂದ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತದೆ</string>
+    <string name="Prunning">ಸಮರುವಿಕೆಯನ್ನು</string>
+    <string name="harvesting">ಪ್ರತಿ ಟನ್‌ಗೆ ಕೊಯ್ಲು</string>
+    <string name="intercrop_prunning">ಕೊಕೊ ಇಂಟರ್‌ಕ್ರಾಪ್‌ನೊಂದಿಗೆ ಸಮರುವಿಕೆಯನ್ನು \n ಮೊತ್ತ/ಮರ (ರೂ)</string>
+    <string name="harv_intercrop">ಕೊಕೊ ಇಂಟರ್‌ಕ್ರಾಪ್‌ನೊಂದಿಗೆ ಕೊಯ್ಲು ಮಾಡುವುದು \ n ಮೊತ್ತ/ಟನ್ (ರೂ)</string>
+    <string name="measurement">ವಯಸ್ಸು</string>
+    <string name="Valid_service">ದಯವಿಟ್ಟು ಸೇವಾ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="valid_pack">ದಯವಿಟ್ಟು ಸೇವಾ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="serviceType">ಸೇವಾ ಪ್ರಕಾರ (ಗಳು)</string>
+    <!-- Equipment   -->
+    <string name="select_godown">ಗೊಡೌನ್ ಆಯ್ಕೆಮಾಡಿ </string>
+    <string name="payment_mode">ಪಾವತಿ ಮೋಡ್ </string>
+    <string name="product">ಉತ್ಪನ್ನ</string>
+    <string name="gst">ಜಿಎಸ್ಟಿ (%)</string>
+    <string name="no_products">ಯಾವುದೇ ಉತ್ಪನ್ನಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="gst_amount">ಜಿಎಸ್ಟಿ (ರೂ)</string>
+    <string name="no_godowns">ಯಾವುದೇ ಗೋದಾಮುಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="address">ವಿಳಾಸ</string>
+    <string name="select_product">ಉತ್ಪನ್ನಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="product_details">ಉತ್ಪನ್ನ ವಿವರಗಳು</string>
+    <string name="notee">ಸೂಚನೆ : </string>
+    <string name="note">ವಿನಂತಿಸಿದ ದಿನಾಂಕದ 5 ದಿನಗಳಲ್ಲಿ ಉತ್ಪನ್ನಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡದಿದ್ದರೆ, ನಿಮ್ಮ ಆದೇಶವನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="subsidy_amt">ಲಭ್ಯವಿರುವ ಸಬ್ಸಿಡಿ ಮೊತ್ತ (ರೂ)</string>
+    <string name="endusermsg">ಒಟ್ಟು ವೆಚ್ಚ 0 ಆಗಿರಬಾರದು</string>
+    <string name="each_product"> ಪ್ರತಿ ಐಟಂ ವೆಚ್ಚ (ರೂ)</string>
+    <string name="server_error">ಸರ್ವರ್ ಸ್ಪಂದಿಸುತ್ತಿಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="godown_valid">ದಯವಿಟ್ಟು ಗೊಡೌನ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="success_pole">ಸಲಕರಣೆಗಳ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ</string>
+    <string name="success_lab">Bio Lab Request Submitted Successfully</string>
+    <string name="subcd_amt">ಸಬ್ಸಿಡಿ ಮೊತ್ತ (ರೂ)</string>
+    <string name="Avb_subcd_amt">ಲಭ್ಯವಿರುವ ಸಬ್ಸಿಡಿ ಮೊತ್ತ (ರೂ)</string>
+    <string name="product_quantity">ಉತ್ಪನ್ನ &amp; ಪ್ರಮಾಣ</string>
+    <string name="qucick_success">ಕ್ವಿಕ್‌ಪೇ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೆಚ್ಚಿಸಲಾಗಿದೆ</string>
+
+    <string name="land_mark">ಹೆಗ್ಗುರುತು</string>
+
+    <string name="language_notification">ಭಾಷಾ ಸೆಟಪ್ ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_off">ಲಾಗ್ ಔಟ್</string>
+    <string name="tap_text">ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಭಾಷೆಯನ್ನು ಆರಿಸಿ:</string>
+    <string name="btn_en">English</string>
+    <string name="btn_te">Telugu</string>
+    <string name="btn_kn">Kannada</string>
+    <string name="only_date">ದಿನಾಂಕ</string>
+    <string name="no_videos">ಯಾವುದೇ ವೀಡಿಯೊಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+
+    <!-- <string name="harvest">Harvest</string>-->
+    <string name="remarks">ಟೀಕೆಗಳು</string>
+    <string name="quantity">ಪ್ರಮಾಣ</string>
+
+
+    <!--Loan-->
+    <string name="loan_req">ಸಾಲಕ್ಕಾಗಿ ವಿನಂತಿ</string>
+    <!--    <string name="loan_message">1) ತ್ವರಿತ ವೇತನವು 3 ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಒದಗಿಸುವ ವಿಶೇಷ ಸೌಲಭ್ಯವಾಗಿದೆ , ಇದರಿಂದಾಗಿ ನಮ್ಮ ರೈತರು ತಮ್ಮ ಎಫ್ಎಫ್ಬಿಗೆ 24 ಗಂಟೆಯೊಳಗೆ ಹಣ  ಪಾವತಿಯನ್ನು ಪಡೆಯಬಹುದು-->
+    <!--        \n2) ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿನ ರಶೀದಿಯಲ್ಲಿ ಸಂಪೂರ್ಣ ಲೆಕ್ಕಾಚಾರ ಮತ್ತು ಪಾವತಿಯ ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಲಾಗುತ್ತದೆ. ರಶೀದಿಗೆ ರೈತನ ಡಿಜಿಟಲ್ ಸಹಿ ಅಗತ್ಯವಿರುತ್ತದೆ , ಎಲ್ಲಾ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳಿಗೆ ಒಪ್ಪಂದವನ್ನು ಸೂಚಿಸುತ್ತದೆ . ಒಂದು ವೇಳೆ 3ಎಫ್ಒಪಿ ಪ್ರತಿನಿಧಿಯು ರತನ ಪರವಾಗಿ ತ್ವರಿತ ವೇತನ ಕೋರಿಕೆಯನ್ನುಸಲ್ಲಿಸುತ್ತಿದ್ದರೆ  , ನಂತರ 4 ಅಂಕಿಯ ಪಿನ್ ಸಂಖ್ಯೆಯನ್ನು ರೈತನ ನೋಂದಾಯಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ . ಇದು ಯಲ್ಲಾ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳಿಗೆ ಒಪ್ಪಂದದ ದೃಢೀಕರಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ .-->
+    <!--        \n3) ಈ ಸೌಲಭ್ಯವನ್ನು ಪಡೆಯಲು , ವಾಸ್ತವಿಕತೆಯ ಅಧಾರದ ಮೇಲೆ ವಹಿವಾಟು ಶುಲ್ಕ ಮತ್ತು ಪ್ರತಿ ಟನ್ಗೆ ತ್ವರಿತ ವೇತನ ಶುಲ್ಕವಿರುತ್ತದೆ-->
+    <!--        \n4) ಚಾಲ್ತಿಯಲ್ಲಿರುವ ತಾತ್ಕಾಲಿಕ ದರವನ್ನು ಆಧರಿಸಿ ತ್ವರಿತ ವೇತನವನ್ನು ಪಾವತಿಸಲಾಗುವುದು. ಒಂದು ವೇಳೆ ADHOC ದರ ಇನ್ನೂ ತಿಳಿದಿಲ್ಲವಾದರೆ ,ತ್ವರಿತ ವೇತನವು ಊಹಿಸಲಾದ ADHOC ದರವನ್ನು ಆಧರಿಸುತ್ತದೆ . ಆದರೆ ಇದನ್ನು ಸರ್ಕಾರಿ ಆದೇಶದ ದರ ಘೋಷಿಸಿದ ನಂತರ ಸರಿಹೊಂದಿಸಲಾಗುವುದು . ಸರಕುಪಟ್ಟಿ ದರವನ್ನು ಘೋಷಿಸಿದಾಗ, ಹೊಂದಾಣಿಕೆ ಸಹ ನಡೆಯುತ್ತದೆ , ಮತ್ತು ಭವಿಷಯದ ಪಾವತಿಗಳೊಂದಿಗೆ (ಸಾಮಾನ್ಯ ಅಥವಾ ತ್ವರಿತ ವೇತನ ) ಪಾವತಿಸಲಾಗುವುದು ಅಥವಾ ಕಡಿತಗೊಳಿಸಲಾಗುವುದು .-->
+    <!--        \n5) ತ್ವರಿತ ಪಾವತಿಗಾಗಿ ವಿನಂತಿಸಲು ಕನಿಷ್ಠ 1 ಪಾವತಿಸದ ಸಂಗ್ರಹಣೆಯ ಅಗತ್ಯವಿದೆ. 1 ಪಾವತಿಸದಿದ್ದಲ್ಲಿಂಗ್ರಹಣೆ, ಬಾಕಿ ಉಳಿದಿರುವ ಎಲ್ಲಾ ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ತ್ವರಿತ ಪಾವತಿ ವಿನಂತಿಯು ಸಂಭವಿಸುತ್ತದೆ. ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಾವತಿಸದ ಸಂಗ್ರಹಂಗಳು ಇದ್ದಂತಹ ಸಂದರ್ಭದಲ್ಲಿ , ತ್ವರಿತ ವೇತನ ವಿನಂತಯು ಬಾಕಿ ಉಳಿದಿರುವ ಎಲ್ಲಾ ಸಂಗ್ರಹಣೆಗಳಿಗೆ ಅನ್ವಹಿಸುತ್ತದೆ .-->
+    <!--        \n6. ದರ ಹೊಂದಾಣಿಕೆಗಳು, ರಸಗೊಬ್ಬರಗಳು, ಧ್ರುವಗಳು ಮತ್ತು ರೈತರಿಗೆ ಬಾಕಿ ಉಳಿದಿರುವ ಪಾವತಿ ಅಥವಾ ಬಾಕಿ ಪಾವತಿಗಳುಾರ್ಮಿಕ ವಿನಂತಿಗಳು ಎಫ್ಎಫ್ಬಿಗೆ ವಿರುದ್ಧವಾಗಿ ಮಾಡಲ್ಪಟ್ಟವು ಮತ್ತು ದಿನಾಂಕದ ಮೊದಲು ರೈತರಿಂದ ಕಂಪನಿಗೆ ಬರಬೇಕಾಗುತ್ತದೆಕ್ವಿಕ್ ಪೇ ಪಾವತಿ ಮಾಡುವಾಗ ತ್ವರಿತ ವೇತನದ ವಿನಂತಿಯನ್ನು ಎಫ್ಎಫ್ಬಿ ಪಾವತಿಯಿಂದ ಕಡಿಮೆ ಮಾಡಲಾಗುತ್ತದೆ.-->
+    <!--        \n7. ತ್ವರಿತ ವೇತನಕ್ಕೆ ಅರ್ಹರಾಗಲು, ಎಫ್ಎಫ್ಬಿ ಪಾವತಿ ಮೌಲ್ಯವು ಎಫ್ಎಫ್ಬಿಗೆ ವಿರುದ್ಧವಾಗಿರಬೇಕುಕಡಿತಗಳು.-->
+    <!--        \n8. ತ್ವರಿತ ವೇತನವನ್ನು ಈಗಾಗಲೇ ವಿನಂತಿಸಿದ್ದರೆ, 1 ರವರೆಗೆ ಮತ್ತೊಂದು ತ್ವರಿತ ವೇತನ ವಿನಂತಿಯನ್ನು ಕೋರಲಾಗುವುದಿಲ್ಲಒಂದು ಪೂರ್ಣಗೊಂಡಿದೆ.-->
+    <!--        \n9. ಒಮ್ಮೆ ಕ್ವಿಕ್ಪೇಗೆ ವಿನಂತಿಸಲಾಗಿದೆ, ಅದನ್ನು ರದ್ದು ಮಾಡಲಾಗುವುದಿಲ್ಲ.-->
+    <!--        \n10. ಕಂಪನಿಯು ಸಾಮಾನ್ಯ ರೈತರನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ದಿನಾಂಕದಂದು ಕ್ವಿಕ್ಪೇ ಲಭ್ಯವಿಲ್ಲಪಾವತಿ. ನಿಯಮಿತ ವೇತನ ಚಕ್ರದ ಪ್ರಕಾರ ಈ ದಿನಾಂಕಗಳು ತಿಂಗಳಿಗೆ ಎರಡು ಬಾರಿ ಬರುತ್ತವೆ.-->
+    <!--        \n11) ಎಫ್ ಎಫ್ ಬಿಗೆ ವಿರಿದ್ಧವಾಗಿ ಇತ್ತೀಚೆಗೆ ಕಾರ್ಮಿಕ ಸೇವೆ ಅಥವಾ ಉತ್ಪನ್ನ ಖರೀದಿಸಿದ್ದರೆ , ಅದು ಈ ಪಾವತಿಯ ಹೇಳಿಕೆಯಲ್ಲಿ ತೋರಿಸದಿರಬಹುದು ಏಕೆಂದರೆ ಅದು ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ . ಆದಾಗ್ಯೂ , ಇದನ್ನು ತ್ವರಿತ ಪಾವತಿಯ ಸಂದರ್ಭದಲ್ಲಿ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತದೆ . ವಿವರಗಳಿಗಾಗಿ , ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೈತ ಲೆಡ್ಜರ್ ಅನ್ನು ನೋಡಿ   .-->
+    <!--    </string>-->
+    <string name="loan_message">1. ತ್ವರಿತ ಪಾವತಿಯು 3ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಒದಗಿಸುವ ವಿಶೇಷ ಸೌಲಭ್ಯವಾಗಿದೆ , ಇದರಿಂದಾಗಿ ನಮ್ಮ ರೈತರು ತಮ್ಮ ಎಫ್ ಎಫ್ ಬಿ ಗೆ 24 ಗಂಟೆಯೊಳಗೆ ಹಣ ಪಾವತಿಯನ್ನು ಪಡೆಯಬಹುದು .
+        \n2. ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿನ ರಶೀದಿಯಲ್ಲಿ ಸಂಪೂರ್ಣ ಲೆಕ್ಕಾಚಾರ ಮತ್ತು ಪಾವತಿಯ ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಲಾಗುತ್ತದೆ. ರಶೀದಿಗೆ ರೈತನ ಡಿಜಿಟಲ್ ಸಹಿ ಅಗತ್ಯವಿರುತ್ತದೆ , ಎಲ್ಲಾ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳಿಗೆ ಒಪ್ಪಂದವನ್ನು ಸೂಚಿಸುತ್ತದೆ . ಒಂದು ವೇಳೆ 3ಎಫ್ ಪ್ರತಿನಿಧಿಯು ರೈತನ ಪರವಾಗಿ ತ್ವರಿತ ಪಾವತಿ ಕೋರಿಕೆಯನ್ನುಸಲ್ಲಿಸುತ್ತಿದ್ದರೆ , 4 ಅಂಕಿಯ ಪಿನ್ ಸಂಖ್ಯೆಯನ್ನು ರೈತನ ನೋಂದಾಯಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ . ಇದು ಎಲ್ಲಾ ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳಿಗೆ ಒಪ್ಪಂದದ ದೃಢೀಕರಣವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
+        \n3. ಈ ಸೌಲಭ್ಯವನ್ನು ಪಡೆಯಲು , ವಾಸ್ತವಿಕತೆಯ ಅಧಾರದ ಮೇಲೆ ವಹಿವಾಟು ಶುಲ್ಕ ಮತ್ತು ಪ್ರತಿ ಟನ್ ಗೆ ತ್ವರಿತ ಪಾವತಿ ಶುಲ್ಕವಿರುತ್ತದೆ .
+        \n4. ಚಾಲ್ತಿಯಲ್ಲಿರುವ ತಾತ್ಕಾಲಿಕ ದರವನ್ನು ಆಧರಿಸಿ ತ್ವರಿತ ಪಾವತಿಯನ್ನು ಪಾವತಿಸಲಾಗುವುದು. ಒಂದು ವೇಳೆ ADHOC ದರ ಇನ್ನೂ ತಿಳಿದಿಲ್ಲವಾದರೆ ,ತ್ವರಿತ ಪಾವತಿಯು ಊಹಿಸಲಾದ ADHOC ದರವನ್ನು ಆಧರಿಸುತ್ತದೆ . ಆದರೆ ಇದನ್ನು ಸರ್ಕಾರಿ ಆದೇಶದ ದರ ಘೋಷಿಸಿದ ನಂತರ ಸರಿಹೊಂದಿಸಲಾಗುವುದು . ಸರಕುಪಟ್ಟಿ ದರವನ್ನು ಘೋಷಿಸಿದಾಗ, ಹೊಂದಾಣಿಕೆ ಸಹ ನಡೆಯುತ್ತದೆ , ಮತ್ತು ಭವಿಷ್ಯದ ಪಾವತಿಗಳೊಂದಿಗೆ (ಸಾಮಾನ್ಯ ಅಥವಾ ತ್ವರಿತ ಪಾವತಿ) ಪಾವತಿಸಲಾಗುವುದು ಅಥವಾ ಕಡಿತಗೊಳಿಸಲಾಗುವುದು.
+        \n5.ತ್ವರಿತ ಪಾವತಿಗಾಗಿ ವಿನಂತಿಸಲು ಕನಿಷ್ಠ 1 ಪಾವತಿಸದ ಸಂಗ್ರಹಣೆಯ ಅಗತ್ಯವಿದೆ. 1 ಪಾವತಿಸದಿದ್ದಲ್ಲಿ
+ಸಂಗ್ರಹಣೆ, ಬಾಕಿ ಉಳಿದಿರುವ ಎಲ್ಲಾ ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ತ್ವರಿತ ಪಾವತಿ ವಿನಂತಿಯು ಸಂಭವಿಸುತ್ತದೆ. ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಾವತಿಸದ ಸಂಗ್ರಹಗಳು ಇದ್ದಂತಹ ಸಂದರ್ಭದಲ್ಲಿ , ತ್ವರಿತ ಪಾವತಿ ವಿನಂತಿಯು ಬಾಕಿ ಉಳಿದಿರುವ ಎಲ್ಲಾ ಸಂಗ್ರಹಣೆಗಳಿಗೆ ಅನ್ವಹಿಸುತ್ತದೆ . .
+        \n6. ರೈತರ ಬಾಕಿ ಇರುವ ಎಲ್ಲಾ  ದರ ಹೊಂದಾಣಿಕೆಗಳು  ಅಂದರೆ ರಸಗೊಬ್ಬರಗಳ,  ಪೊಲ್ಸ್ ಗಳ , ಬಯೋ ಲ್ಯಾಬ್ ಮತ್ತು ಎಫ್ಎಫ್ಬಿ ವಿರುದ್ಧ ಮಾಡಲಾದ ಕಾರ್ಮಿಕ ವಿನಂತಿಗಳನ್ನು  ತ್ವರಿತ ವೇತನದ ಕೋರಿಕೆಯ ದಿನಾಂಕದ ಮೊದಲು ರೈತರು ಕಂಪನಿಗೆ ಪಾವತಿಸಬೇಕಾಗುತ್ತದೆ. ಹಾಗಾಗಿ ತ್ವರಿತ  ವಿನಂತಿಯನ್ನು ಮಾಡುವಾಗ ಬಾಕಿ ಇರುವ ಪಾವತಿಗಳನ್ನು ಎಫ್ ಎಫ್ ಬಿ ಪಾವತಿಗಳಲ್ಲಿ ಕಡಿತಗೊಳಿಸಲಾಗುವದು.
+        \n7. ತ್ವರಿತ ಪಾವತಿಗೆ ಅರ್ಹರಾಗಲು , ಎಫ್ ಎಫ್ ಬಿ ಪಾವತಿ ಮೌಲ್ಯವು ಯಾವುದೇ ಎಫ್ ಎಫ್ ಬಿ ಕಡಿತಗಳಿಗಿಂತ ಹೆಚ್ಚಿರಬೇಕು.
+        \n8. ತ್ವರಿತ ಪಾವತಿಯನ್ನು ಈಗಾಗಲೇ ವಿನಂತಿಸಿದ್ದರೆ , ಮೊತ್ತೊಂದು ತ್ವರಿತ ಪಾವತಿ ವಿನಂತಿಯನ್ನು ಮೊದಲನೇ ವಿನಂತಿ ಪೂರ್ಣಗೊಳ್ಳುವವರೆಗೆ ಕೋರಲಾಗುವುದಿಲ್ಲ.
+        \n9. ಒಮ್ಮೆ ತ್ವರಿತ ಪಾವತಿಗೆ ವಿನಂತಿಸಿದ್ದರೆ , ಅದನ್ನು ರದ್ದುಮಾಡಲಾಗುವುದಿಲ್ಲ.
+        \n10.ಕಂಪನಿಯು ನಿಯಮಿತ ರೈತ ಪಾವತಿಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ದಿನಾಂಕದಂದು ತ್ವರಿತ ಪಾವತಿ ಲಭ್ಯವಿರುವುದಿಲ್ಲ .ಈ ದಿನಾಂಕಗಳು ತಿಂಗಳಿಗೆ ಎರಡು ಬಾರಿ ಬರುತ್ತವೆ.
+        \n11.ಎಫ್ ಎಫ್ ಬಿ ಮೊತ್ತಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಮೊತ್ತಕ್ಕೆ ಇತ್ತೀಚೆಗೆ ಕಾರ್ಮಿಕ ಸೇವೆ ಅಥವಾ ಉತ್ಪನ್ನ ಖರೀದಿಸಿದ್ದರೆ , ಅದು ಈ ಪಾವತಿಯ ಹೇಳಿಕೆಯಲ್ಲಿ ತೋರಿಸದಿರಬಹುದು ಏಕೆಂದರೆ ಅದು ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ . ಹಾಗಾಗಿ , ಇದನ್ನು ತ್ವರಿತ ಪಾವತಿಯ ಸಂದರ್ಭದಲ್ಲಿ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತದೆ . ವಿವರಗಳಿಗಾಗಿ , ದಯವಿಟ್ಟು ನಿಮ್ಮ ರೈತ ಲೆಡ್ಜರ್ ಅನ್ನು ನೋಡಿ  .
+    </string>
+    <string name="got_it">ಗೊತ್ತಾಯಿತು</string>
+    <string name="terms_conditionss">ನಿಯಮಗಳು &amp; ಷರತ್ತುಗಳು</string>
+    <string name="success_Loan">ಸಾಲ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ</string>
+    <string name="no_req_found">ಯಾವುದೇ ವಿನಂತಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+
+    <string name="loan_amount">ಸಾಲದ ಮೊತ್ತ (ರೂ)</string>
+    <string name="reason_loan">ಸಾಲಕ್ಕೆ ಕಾರಣ</string>
+    <string name="str_enter_loan_amount">ದಯವಿಟ್ಟು ಸಾಲದ ಮೊತ್ತವನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="enter_loan_amount">ನಿಮ್ಮ ಬಾಕಿ ಎಫ್‌ಎಫ್‌ಬಿ ಪಾವತಿಗಿಂತ ಹೆಚ್ಚಾಗಿದೆ, ಆದ್ದರಿಂದ, ಕ್ವಿಕ್‌ಪೇ ಪೂರ್ಣಗೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+
+    />
+    <!--    -->
+    <string name="total_records">ಒಟ್ಟು ದಾಖಲೆಗಳು</string>
+
+    <string name="no_pdfs">ಯಾವುದೇ ಪಿಡಿಎಫ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="dosage_only">ಡೋಸೇಜ್</string>
+
+
+    <string name="crop">ಬೆಳೆ ನಿರ್ವಹಣೆ ಭೇಟಿ</string>
+    <string name="recommended_ertilizer">ಶಿಫಾರಸು ಮಾಡಿದ ರಸಗೊಬ್ಬರ</string>
+    <string name="UOMName">ಯುಒಎಂ ಹೆಸರು</string>
+    <string name="LastUpdatedDate">ಕೊನೆಯ ನವೀಕರಿಸಿದ ದಿನಾಂಕ</string>
+
+
+    <string name="Chemical">ರಾಸಾಯನಿಕ</string>
+    <!--Navigation -->
+    <string name="my3F">ನನ್ನ 3 ಎಫ್</string>
+    <string name="logout">ಲಾಗ್ ಔಟ್</string>
+    <string name="confirmation">ದೃಢೀಕರಣ</string>
+    <string name="alert_logout">ನೀವು ಟೋಲೋಗೌಟ್ ಬಯಸುವುದು ಖಚಿತವೇ?</string>
+    <string name="no_plots">ಯಾವುದೇ ಪ್ಲಾಟ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+
+
+    <string name="error">ದೋಷ</string>
+
+
+    <!--    Visit -->
+    <string name="issue_type">ಸಮಸ್ಯೆಯ ಮಾದರಿ</string>
+    <string name="image">ಚಿತ್ರ ಅಪ್‌ಲೋಡ್</string>
+    <string name="record">ಧ್ವನಿ ರೆಕಾರ್ಡಿಂಗ್</string>
+
+    <string name="visit_success">ಸಲ್ಲಿಸಿದ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ</string>
+    <!--    Quick pay -->
+    <string name="digital_signature">ಡಿಜಿಟಲ್ ಸಹಿ</string>
+    <string name="request_rise">ವಿನಂತಿಯನ್ನು ಹೆಚ್ಚಿಸಿ</string>
+    <string name="clear">ಸ್ಪಷ್ಟ</string>
+    <string name="signature">ದಯವಿಟ್ಟು ಸಹಿ ಬರೆಯಿರಿ</string>
+    <string name="quick_pay">ಕ್ವಿಕ್‌ಪೇ ಶುಲ್ಕ (ರೂ)</string>
+    <string name="closingBal">ಬಾಕಿ (ರೂ)</string>
+
+    <string name="quantity_mt">ಪ್ರಮಾಣ (MT)</string>
+    <string name="ffb_flot">್ವರಿತ ಪಾವತಿ ದರ (ರೂ)</string>
+    <string name="amount_of_FFB">್ವರಿತ ಪಾವತಿ ವೆಚ್ಚ (ರೂ)</string>
+    <string name="convenience_charge">ವಹಿವಾಟು ಶುಲ್ಕ (ರೂ)</string>
+    <string name="total_amt_pay">ಒಟ್ಟು ಬಿಲ್ ಮೊತ್ತ (ರೂ)</string>
+    <string name="farmar_id">ಫಾರ್ಮರ್ ಐಡಿ ನಮೂದಿಸಿ</string>
+    <string name="Internet">ದಯವಿಟ್ಟು ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ</string>
+    <string name="welcome">ಸ್ವಾಗತ</string>
+    <string name="login">ಲಾಗಿನ್ ಮಾಡಿ</string>
+    <string name="scan_qr">QR ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ</string>
+    <string name="ente_pin">ದಯವಿಟ್ಟು ಒಟಿಪಿ ನಮೂದಿಸಿ</string>
+
+    <string name="str_standard">ಸ್ಟ್ಯಾಂಡರ್ಡ್</string>
+    <string name="str_videos">ವೀಡಿಯೊಗಳು</string>
+    <string name="str_pdf">ಪಿಡಿಎಫ್ ಗಳು</string>
+
+
+    <string name="total_amt">ಒಟ್ಟು ಮೊತ್ತ (ರೂ)</string>
+
+    <string name="confirm">ಖಚಿತಪಡಿಸಿ</string>
+    <string name="Rs">\u20B9</string>
+    <!--    <string name="Rs2">\u20B9 :</string>-->
+    <string name="select_product_toast">ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಉತ್ಪನ್ನವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="valid_issue_type">ದಯವಿಟ್ಟು ಸಂಚಿಕೆ ಪ್ರಕಾರವನ್ನು ಆರಿಸಿ</string>
+    <string name="select_image">ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಚಿತ್ರ ಅಥವಾ ಧ್ವನಿ ದಾಖಲೆಯನ್ನು ಲಗತ್ತಿಸಿ</string>
+    <string name="str_select_plot">ಪ್ಲಾಟ್ ಆಯ್ಕೆಮಾಡಿ</string>
+
+
+    >
+    <string name="no_recommendations">ಯಾವುದೇ ಶಿಫಾರಸುಗಳಿಲ್ಲ</string>
+    <string name="record_btn">Record</string>
+    <string name="stop">ನಿಲ್ಲಿಸಿ</string>
+    <string name="play">ಪ್ಲೇ ಮಾಡಿ</string>
+    <string name="summary">ಸಾರಾಂಶ</string>
+    <string name="record_voice">ಧ್ವನಿಮುದ್ರಿಸಲಾಗಿದೆ</string>
+    <string name="product_req">ಉತ್ಪನ್ನ ವಿನಂತಿ</string>
+    <string name="date_selectiomn">ದಯವಿಟ್ಟು ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+
+    <string name="success_fertilizer">ರಸಗೊಬ್ಬರ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ</string>
+
+
+    <string name="requestCodeLabel">ಐಡಿ ವಿನಂತಿಸಿ</string>
+    <string name="reqDatee">ವಿನಂತಿಸಿದ ದಿನಾಂಕ</string>
+    <string name="paymentMode">ಪಾವತಿ ಮೋಡ್</string>
+    <string name="req_date">ವಿನಂತಿಸಿದ ದಿನಾಂಕ</string>
+
+    <!--    Request -->
+    <!--    Request -->
+    <string name="lab_req">ಕಾರ್ಮಿಕ ವಿನಂತಿ</string>
+    <string name="select_labour_ltype">ಕಾರ್ಮಿಕ ಸೇವೆ</string>
+    <string name="pole_req">ಸಲಕರಣೆಗಳ ವಿನಂತಿ</string>
+    <string name="fert_req">ರಸಗೊಬ್ಬರ ವಿನಂತಿ</string>
+    <string name="quick_req">ತ್ವರಿತ ಪಾವತಿ</string>
+    <string name="visit_req">ತೋಟದ ಭೇಟಿಯ ವಿನಂತಿ</string>
+    <string name="Loan_req">ಸಾಲ ವಿನಂತಿ</string>
+    <string name="biolab">Bio Lab</string>
+
+    <!--    -->
+    <string name="officer_name">ಕ್ಲಸ್ಟರ್ ಅಧಿಕಾರಿ ಹೆಸರು</string>
+    <string name="officer_mobile">ಕ್ಲಸ್ಟರ್ ಅಧಿಕಾರಿ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ</string>
+    <string name="manager_name">ಕ್ಲಸ್ಟರ್ ಮ್ಯಾನೇಜರ್ ಹೆಸರು </string>
+    <string name="head_name">ರಾಜ್ಯ ಮುಖ್ಯಸ್ಥರ ಹೆಸರು</string>
+    <string name="whats_number">ವಾಟ್ಸಾಪ್ ಸಂಖ್ಯೆ</string>
+    <string name="customer_care">ಗ್ರಾಹಕ ಆರೈಕೆ ಸಂಖ್ಯೆ</string>
+    <string name="farmer_name">ರೈತನ ಹೆಸರು</string>
+    <string name="fa_hu_name">ತಂದೆ/ಗಂಡನ ಹೆಸರು</string>
+    <string name="res_address">ಮನೆಯ ವಿಳಾಸ, ವಾಸಸ್ಥಳದ ವಿಳಾಸ</string>
+
+    <string name="addresss">ವಿಳಾಸ   :</string>
+    <string name="mandal">ತಾಲ್ಲೂಕು</string>
+    <string name="dist">ಜಿಲ್ಲೆ</string>
+    <string name="state">ರಾಜ್ಯ</string>
+    <string name="pin">ಪಿನ್ ಕೋಡ್</string>
+    <string name="mobile">ಮೊಬೈಲ್ ನಂಬರ</string>
+    <string name="alter_mobile">ಪರ್ಯಾಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ \n ಸಂಖ್ಯೆ</string>
+    <string name="email">ಇಮೇಲ್ ಐಡಿ</string>
+    <string name="plaod_hect">ಹೆಕ್ಟಾರೆಜ್</string>
+    <string name="sur_num">ಸಮೀಕ್ಷೆ ಸಂಖ್ಯೆ</string>
+    <!--  //  survey-->
+    <!--   We have sent Otp on Your Mobile XXXXXXXX10-->
+    <string name="fert_godown">ರಸಗೊಬ್ಬರ ಗೊಡೌನ್‌ಗಳು</string>
+    <string name="collection_centres">ಸಂಗ್ರಹ ಕೇಂದ್ರಗಳು</string>
+    <string name="Mills">ಗಿರಣಿಗಳು</string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="link">ಗೂಗಲ್ ನಕ್ಷೆಗಳಿಗೆ ಲಿಂಕ್ ಮಾಡಿ</string>
+    <string name="map">ನಕ್ಷೆಗಳು</string>
+    <string name="list">ಪಟ್ಟಿ</string>
+    <string name="view_in_map">ನಕ್ಷೆಯಲ್ಲಿ ವೀಕ್ಷಿಸಿ</string>
+    <string name="important_contacts">ಪ್ರಮುಖ ಸಂಪರ್ಕಗಳು</string>
+    <string name="basic_info">ಮೂಲ ಮಾಹಿತಿ</string>
+    <string name="Invalid">ಅಮಾನ್ಯ ರೈತ ಐಡಿ</string>
+    <string name="contact">ಪ್ರಮುಖ ಸಂಪರ್ಕಗಳು</string>
+    <string name="places">ಮುಖ್ಯವಾದ ಸ್ಥಳಗಳು</string>
+    <string name="farmer_profile">ರೈತ ವಿವರ</string>
+    <string name="plot_details">ಪ್ಲಾಟ್ ವಿವರಗಳು</string>
+    <string name="cancel_success">ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ</string>
+    <string name="amount_payble">ಪಾವತಿಸಬೇಕಾದ ಮೊತ್ತ (ರೂ)</string>
+    <string name="comments_valid">ದಯವಿಟ್ಟು ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="no_data">ಯಾವುದೇ ಮಾಹಿತಿ ಇಲ್ಲ</string>
+    <string name="Godown_name">ಕೆಳಗೆ ಹೋಗಿ</string>
+
+    <string name="paym_validation">ದಯವಿಟ್ಟು ಪಾವತಿ ಮೋಡ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="otp_sent">ಒಟಿಪಿ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+
+    <string name="fertgodown">ರಸಗೊಬ್ಬರ ಗೊಡೌನ್‌ಗಳು</string>
+    <string name="manager_num">ಕ್ಲಸ್ಟರ್ ಮ್ಯಾನೇಜರ್ ಸಂಪರ್ಕ ಸಂಖ್ಯೆ</string>
+    <string name="care">ಗ್ರಾಹಕರ ಸೇವೆ</string>
+    <string name="complete_details">ಸಂಪೂರ್ಣ ವಿವರಗಳನ್ನು ನೋಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="labour_leader">ನಾಯಕ </string>
+    <string name="job_done">ಕೆಲಸ ಮುಗಿದಿದೆ</string>
+    <string name="coll_id">ಸಂಗ್ರಹ ಐಡಿ (ಗಳು)</string>
+
+    <string name="product_name">ಉತ್ಪನ್ನದ ಹೆಸರು</string>
+    <string name="price">ಬೆಲೆ (ರೂ)</string>
+    <string name="product_size"> ಗಾತ್ರ</string>
+
+    <string name="pru_amountt">ಸಮರುವಿಕೆಯನ್ನು ಕೋಸ್ಟ್ / ಟ್ರೀ (ರೂ)</string>
+    <string name="num_trees"> ಮರಗಳ ಸಂಖ್ಯೆ</string>
+    <string name="Prunning_amount">ಸಿ) ಸಮರುವಿಕೆಯನ್ನು \n ಮೊತ್ತ (ರೂ)(ಎ * ಬಿ)</string>
+    <string name="harv_amountt">ಕೊಯ್ಲು \n ವೆಚ್ಚ/ ನ್ (ರೂ)</string>
+    <string name="net_weight_mt"> ನಿವ್ವಳ ತೂಕ (ಎಂಟಿ)</string>
+    <string name="harvesting_amount">ಎಫ್) ಕೊಯ್ಲು \n ಮೊತ್ತ (ರೂ)(ಡಿ*ಇ)</string>
+    <string name="service_chargeper">ಎಂ) ಸೇವಾ ಶುಲ್ಕ (%)</string>
+    <string name="service_amount">ಎನ್) ಸೇವಾ ುಲ್ಕ (ರೂ) \n ((ಸಿ+ಎಫ್+ಐ+ಎಲ್)*ಎಂ)/100</string>
+    <string name="disc_package">ಒ) ಪ್ಯಾಕೇಜ್ ರಿಯಾಯಿತಿ (%)</string>
+    <string name="disc_price">ಪಿ) ಪ್ಯಾಕೇಜ್ ರಿಯಾಯಿತಿ \n ಬೆಲೆ (ರೂ) \n ((ಸಿ + ಎಫ್ + ಐ + ಎಲ್) * ಒ)/100 </string>
+    <string name="amount_labour">Q)Total Amount(Rs)\n(C+F+I+L+N)-P</string>
+
+    <string name="payment_details">ಒಟ್ಟು ಮೊತ್ತದ ವಿವರಗಳು</string>
+    <string name="instock">ಉಪಲಬ್ದವಿದೆ</string>
+    <string name="nocomments">ಯಾವುದೇ ಟೀಕೆಗಳಿಲ್ಲ</string>
+    <string name="net_weightk">ನಿವ್ವಳ ತೂಕ (ಕೆಜಿ)</string>
+    <string name="net_weightt">ನಿವ್ವಳ ತೂಕ (ಟನ್)</string>
+    <string name="alert_msg">ಈ ವಿನಂತಿಯನ್ನು ರದ್ದುಗೊಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?</string>
+    <string name="yes">ಹೌದು</string>
+    <string name="no">ಇಲ್ಲ</string>
+    <string name="quick_docu">ಕ್ವಿಕ್‌ಪೇ ಡಾಕ್ಯುಮೆಂಟ್</string>
+
+    <string name="description">ವಿವರಣೆ :</string>
+
+    <string name="Cgst">ಸಿಜಿಎಸ್ಟಿ(%)</string>
+    <string name="sgst">ಎಸ್‌ಜಿಎಸ್‌ಟಿ(%)</string>
+    <string name="cgst_amount">ಸಿಜಿಎಸ್ಟಿ (ರೂ.)</string>
+    <string name="sgst_amount">ಎಸ್‌ಜಿಎಸ್‌ಟಿ (ರೂ.)</string>
+    <string name="discount_percentage"> ಪ್ಯಾಕೇಜ್ ವಿವರಗಳು</string>
+    <string name="Package">ಪ್ಯಾಕೇಜ್</string>
+    <string name="discount">ರಿಯಾಯಿತಿ(%)</string>
+    <string name="disc">ಆಫರ್ ಅನ್ವಯಿಸಲಾಗಿದೆ</string>
+    <string name="text">ಪೀಕ್ ಸೀಸನ್‌ನಲ್ಲಿ (ಏಪ್ರಿಲ್ ಟು ಆಕ್ಟೊಬರ್) ಪ್ರತಿ 10 ದಿನಗಳಿಗೊಮ್ಮೆ ಮತ್ತು ಲೀನ್ ಸೀಸನ್‌ನಲ್ಲಿ 15 ದಿನಗಳವರೆಗೆ (ನೊವೆಬರ್ ಟು ಮಾರ್ಚ್) ಕೊಯ್ಲು ಸೇವೆಯನ್ನು ಒದಗಿಸಲಾಗುವುದು.</string>
+
+    <string name="thirty_days">ಕೊನೆಯ 30 ದಿನಗಳು</string>
+    <string name="currentfinicial">ಪ್ರಸ್ತುತ ಹಣಕಾಸು ವರ್ಷ</string>
+    <string name="selected">ಸಮಯದ ಅವಧಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="multistring">ದಯವಿಟ್ಟು ಸೇವೆ (ಗಳನ್ನು) ಆಯ್ಕೆಮಾಡಿ)</string>
+    <string name="thirtyP_days">ಕೊನೆಯ 30 ದಿನಗಳು</string>
+    <string name="last_month"> ಕಳೆದ ತಿಂಗಳು</string>
+    <string name="last_threemonth"> ಕಳೆದ ಮೂರು ತಿಂಗಳು</string>
+    <string name="currentfinicialP">ಕಳೆದ ಒಂದು ವರ್ಷ</string>
+    <string name="selectedP">ಸಮಯದ ಅವಧಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="or">ಅಥವಾ</string>
+    <string name="failmsg">You can\'t Raise the Request since Amount is 0</string>
+
+    <string name="userPermission">ಎಲ್ಲಾ ಅನುಮತಿಗಳನ್ನು ಬಳಕೆದಾರರು ನೀಡುತ್ತಾರೆ!</string>
+    <string name="incrop_prunning"> ಇಂಟರ್ಕ್ರಾಪ್ ಸಮರುವಿಕೆಯನ್ನು \n ಕಾಸ್ಟ್/ಟ್ರೀ (ರೂ)</string>
+    <string name="num_intercrop">ಇಂಟರ್ಕ್ರಾಪ್ ಮರಗಳ ಸಂಖ್ಯೆ</string>
+    <string name="pru_intercrop_amountt"> ಸಮರುವಿಕೆಯನ್ನು ಇಂಟರ್ಕ್ರಾಪ್ \n ಮೊತ್ತ(ರೂ)(ಜಿ*ಎಚ್)</string>
+    <string name="harv_inter_amountt">ಅಂತರ ಬೆಳೆ ಕೊಯ್ಲು \n ಕಾಸ್ಟ್/ ್ರೀ (ರೂ)</string>
+    <string name="harv_intercrop_netweight">ಇಂಟರ್ಕ್ರಾಪ್ ನಿವ್ವಳ ತೂಕ (ಟನ್)</string>
+    <string name="harv_intercrop_amout">ಹಾರ್ವೆಸ್ಟಿಂಗ್ ಇಂಟರ್ಕ್ರಾಪ್ \n ಮೊತ್ತ (ರೂ) (ಜೆ*ಕೆ)</string>
+    <string name="details">ಸಂಪೂರ್ಣ ವಿವರಗಳು</string>
+    <string name="close">ಮುಚ್ಚಿ</string>
+    <string name="cluster_officer">ಕ್ಲಸ್ಟರ್ ಹೆಸರು</string>
+    <string name="inter_coco">\u2022 ಪ್ರಬುದ್ಧ ಕೋಕೋ ಹೆಚ್ಚುವರಿ ಕಾರ್ಮಿಕ ಶುಲ್ಕಗಳನ್ನು ಒಡ್ಡುತ್ತದೆ. \n \u2022 ಕೊಯ್ಲು ಮಾಡಿದ ನಂತರ ರೈತ ಲೋಡಿಂಗ್ ಮತ್ತು ಸಾಗಣೆಯನ್ನು ತೊಡಗಿಸಿಕೊಳ್ಳಬೇಕು. \n \u2022 ಆಫ್ ಸೀಸನ್‌ಗೆ, ಕೊಯ್ಲು ಮಾಡಿದ ನೈಜ ಪ್ರಮಾಣವನ್ನು ಲೆಕ್ಕಿಸದೆ ಉದ್ಯಾನದ ವಯಸ್ಸಿನ ಪ್ರಕಾರ 1 ಟನ್ ಸುಗ್ಗಿಯ ಕನಿಷ್ಠ ಬಿಲ್ಲಿಂಗ್ ಆಗಿದೆ. ನೆಲದ ವಾಸ್ತವತೆಗಳ ಆಧಾರದ ಮೇಲೆ ಆಫ್ ಸೀಸನ್ ಮತ್ತು ಕಾರಣದ ವ್ಯಾಖ್ಯಾನವು ವರ್ಷದಿಂದ ವರ್ಷಕ್ಕೆ ಭಿನ್ನವಾಗಿರುತ್ತದೆ. ಯಾವುದೇ ಸ್ಪಷ್ಟತೆಗಾಗಿ ನಿಮ್ಮ ಕ್ಲಸ್ಟರ್ ಅಧಿಕಾರಿಯನ್ನು ಕೇಳಿ.</string>
+    <string name="quick_reqc">ಕ್ವಿಕ್‌ಪೇ ಅನ್ನು ಈಗಾಗಲೇ ವಿನಂತಿಸಲಾಗಿದೆ, 1 ನೆಯದು ಪೂರ್ಣಗೊಳ್ಳುವವರೆಗೆ ಮತ್ತೊಂದು ಕ್ವಿಕ್‌ಪೇ ವಿನಂತಿಯನ್ನು ವಿನಂತಿಸಲಾಗುವುದಿಲ್ಲ.</string>
+    <string name="visit_reqst">ಭೇಟಿ ವಿನಂತಿಯನ್ನು ಈಗಾಗಲೇ ಹೆಚ್ಚಿಸಲಾಗಿದೆ.</string>
+    <string name="intercrops">ಇಂಟರ್ ಕ್ರಾಪ್ (ಗಳು)</string>
+    <string name="pinn">ಪಿನ್ ಮಾಡಿ</string>
+    <string name="re_send">OTP ಅನ್ನು ಮರುಹೊಂದಿಸಿ</string>
+    <string name="farmar_code">ರೈತನ ಕೋಡ್</string>
+    <string name="no_yeild">ಇಳುವರಿ ಪ್ಲಾಟ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="assign_date">ನಿಗದಿಪಡಿಸಿದ ದಿನಾಂಕ</string>
+    <string name="have_pole">ಸ್ವಂತ ಧ್ರುವವಿದೆಯೇ?</string>
+    <string name="loan_terms">ಆಯಿಲ್ ಪಾಮ್ ರೈತರಿಗೆ ಬೆಳೆ ಸಾಲವನ್ನು ಒದಗಿಸಲು 3 ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಸ್ಟೇಟ್ ಬ್ಯಾಂಕ್ ಆಫ್ ಇಂಡಿಯಾದೊಂದಿಗೆ ತಿಳುವಳಿಕೆ ಪತ್ರಕ್ಕೆ ಸಹಿ ಹಾಕಿದೆ
+        1.ಾಲವನ್ನು ಅನುಮೋದಿಸಿದರೆ 3 ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಮತ್ತು ಎಸ್‌ಬಿಐ ರೈತನೊಂದಿಗೆ ತ್ರಿಪಕ್ಷೀಯ ಒಪ್ಪಂದ ಮಾಡಿಕೊಳ್ಳುತ್ತವೆ.
+        2.ಅಗತ್ಯವಾದ ದಾಖಲೆಗಳ ನಂತರ ಸಾಲಗಳು ಎಸ್‌ಬಿಐ ಅನುಮೋದನೆಗೆ ಒಳಪಟ್ಟಿರುತ್ತವೆ.
+        3. 3ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಸಹಭಾಗಿತ್ವದೊಂದಿಗೆ ಬೆಳೆ ಸಾಲಗಳ ಮಂಜೂರಾತಿಗೆ ಅಗತ್ಯವಾದ ದಾಖಲೆಗಳನ್ನು ಕೆಳಗೆ ನೀಡಲಾಗಿದೆ ಅಪ್ಲಿಕೇಶನ್ (ಶಾಖೆಯಲ್ಲಿ ಲಭ್ಯವಿದೆ).* ಅಧಾರ್ ಕಾರ್ಡ್ - ಜೆರಾಕ್ಸ್
+\n* ಭೂ ದಾಖಲೆಗಳು (ಪಟ್ಟಾಧರ್ ಪಾಸ್ ಪುಸ್ತಕ)
+\n* 1-ಬಿ
+    \n * ಅಡಂಗಲ್
+    \n * ಇಸಿ
+    \n * ಫೋಟೋಗಳು
+    \n * ತ್ರಿಪಕ್ಷೀಯ ಒಪ್ಪಂದ - 100 / - ಸ್ಟಾಂಪ್
+    \n * ಇತರ ಬ್ಯಾಂಕುಗಳಲ್ಲಿ ಯಾವುದೇ ಸಾಲಗಳು ಇಲ್ಲ ಎಂಬ ಪ್ರಮಾಣ ಪತ್ರ
+        \n4. ಬೆಳೆ ಸಾಲ ಮತ್ತು ಕೃಷಿ ಅವಧಿಯ ಸಾಲ - 2 ರೀತಿಯ ಸೌಲಭ್ಯಗಳನ್ನು ನೀಡಲಾಗುತ್ತದೆ
+        \n5. ಮೇಲಿನ ಯಾವುದಕ್ಕಾದರೂ ಒಂದಕ್ಕೆ ಮಂಜೂರಾದ ಮಿತಿಗಳು ಎಸ್ಬಿಐನ ವಿವೇಚನೆಯಿಂದ.
+        \n6. ರೈತರ ಪಾಮ್ ಆಯಿಲ್ ತೋಟಗಳಿಂದ ಬರುವ ಎಲ್ಲಾ ಎಫ್ ಎಫ್ ಬಿಯನ್ನು 3ಎಫ್ ಆಯಿಲ್ ಪಾಮ್ ಕಾನೂನಿನ ಪ್ರಕಾರ ಮಾತ್ರ ಸಲ್ಲಿಸಬೇಕು
+        \n7. ಎಫ್ ಎಫ್ ಬಿ ಪಾವತಿಯನ್ನು ಎಸ್ಬಿಐ ಸಾಲದ ಖಾತೆಗೆ ಮಾತ್ರ ಕಳುಹಿಸಲಾಗುತ್ತದೆ
+        \n8. ಸಾಲದ ಮೊತ್ತವನ್ನು ಸರಬರಾಜು ಮಾಡಿದ ಎಫ್‌ಎಫ್‌ಬಿಯಿಂದ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತದೆ.
+        \n9. ಸಾಲದ ಅವಧಿಯಲ್ಲಿ, ಬ್ಯಾಂಕ್ ಖಾತೆಯ ಬದಲಾವಣೆಯನ್ನು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ.
+    </string>
+    <string name="otpsuccess">ನಿಮ್ಮ ರಿಜಿಸ್ಟರ್ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ (ಗಳಿಗೆ) ಗೆ ಒಟಿಪಿ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="unpaid_note">ವಿನಂತಿಸಿದ ದಿನಾಂಕದಿಂದ 5 ದಿನಗಳಲ್ಲಿ  ಉತ್ಪನ್ನಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡದಿದ್ದರೆ  , ನಿಮ್ಮ ಆದೇಶವನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="quick_pdf">ಕ್ವಿಕ್‌ಪೇ ವಿನಂತಿ ಪಿಡಿಎಫ್</string>
+    <string name="select_imagee">(ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಚಿತ್ರ ಅಥವಾ ಧ್ವನಿ ದಾಖಲೆಯಲ್ಲಿ ಲಗತ್ತಿಸಿ.)</string>
+    <string name="slecteddate">ಆದ್ಯತೆಯ ದಿನಾಂಕ</string>
+    <string name="unableselect">ಈ ತಿಂಗಳು ಆಯ್ಕೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="downloaded">ಯಶಸ್ವಿಯಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="enter_loan">ಸಾಲದ ಮೊತ್ತ 0 ಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು</string>
+    <string name="App_version">ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ : </string>
+
+    <string name="qrscnner">ಕ್ಯೂಆರ್ ಸ್ಕ್ಯಾನರ್</string>
+
+    <string name="paymentnote_note">ಇನ್ನೂ ಪಾವತಿ ಬಾಕಿ ಇರುವ ಎಫ್ ಎಫ್ ಬಿ ಸಂಗ್ರಹಗಳು ತೋರಿಸುವುದಿಲ್ಲ, ಪಾವತಿಯ ನಂತರ ಮಾತ್ರ ಅವು ತೋರಿಸಲಾರಂಭಿಸುತ್ತವೆ.</string>
+
+    <string name="Transportservice">Transport service questioner Farmer</string>
+    <string name="Transportquestioner">Transport service questioner Vendor</string>
+    <string name="haveoilfarmzone">Do You Have Oilpalm in our Factory Zone</string>
+    <string name="ownership">Ownership</string>
+    <string name="hiringservice">How long do he in FFB transport hiring service</string>
+    <string name="villastatic">Name of the villages currently providing hire vehicles</string>
+    <string name="ownvehicles">Enter No of Own  Vehicles</string>
+    <string name="Vehicle_Type">Vehicle Type</string>
+    <string name="hiringbasics">Hiring Basis</string>
+    <string name="Hire_Charges">Hire Charges</string>
+    <string name="prob">What are the problems facing in hiring service</string>
+    <string name="getadvance">Do you get advance from farmers</string>
+    <string name="Payment_period">Payment Period</string>
+    <string name="PleaseSpecify">Please Specify</string>
+    <string name="delaypayments">Do you charge waiting charges from farmers if load delays at farmer garden</string>
+    <string name="interesttojoin">Do you interested to join 3F Akshaya app platform to provide transport service to farmers</string>
+    <string name="detailsofcharges">Details of Charges (Rs )</string>
+    <string name="Validatefactorzone">Please select Do You Have Oilpalm in our Factory Zone</string>
+    <string name="validateownership">Please select Oilpalm  ownership</string>
+    <string name="entername">Please Enter  Name</string>
+    <string name="enteraddress">Please Enter Address</string>
+    <string name="entermobile">Please Enter Mobile Number</string>
+    <string name="selecthiring">Please Select  How long do you in FFB transport hiring service</string>
+    <string name="Valid_districts">Please Select District(s)</string>
+    <string name="Valid_villages">Please Select Village(s)</string>
+    <string name="Valid_mandal">Please Select Mandal(s)</string>
+    <string name="Valid_state">Please Select State</string>
+    <string name="enternumofvehicle">Please Enter No of Vehicles</string>
+    <string name="validatevehicletype">ದಯವಿಟ್ಟು ವಾಹನದ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="validatehiringbasis">Please Select Hiring Basis</string>
+    <string name="validatehirecharges">Please Enter Hire Charges</string>
+    <string name="validateadvace">Please Select Do you get advance from farmers</string>
+    <string name="validatepaymentperiod">Please Select Payment Period</string>
+    <string name="validatespecify">Please Specify</string>
+    <string name="validatepaymentmode">Please Select Payment Mode</string>
+    <string name="validatewaitingcharges">Please Select Do you charge waiting charges from farmers if load delays at farmer garden</string>
+    <string name="validatechargedetails">Please Enter Details of Charges (Rs )</string>
+    <string name="validateinterest">Please Select Do you interested to join 3F Akshaya app platform to provide transport service to farmers</string>
+    <string name="vendortransportservice">Vendor Transport service details Sumbmitted Successfully</string>
+    <string name="driverpertrans">Driver for Transportation</string>
+    <string name="driverpayment">Driver Payment</string>
+    <string name="Amountper">Amount per</string>
+    <string name="vehiclecurrently">Vehicle Currently on Rent?</string>
+    <string name="willingtorent">Willing to Rent?</string>
+    <string name="farmerselection">Farmer Selection</string>
+    <string name="entrtprice">Enter Price</string>
+    <string name="destination1">Destination1</string>
+    <string name="destination2">Destination 2</string>
+    <string name="haveanyattachments">Do You have any additional Equipment?</string>
+    <string name="haveanytractorattachments">What attachments do you have for tractor?</string>
+    <string name="chargeperacre">Charges Per Acre</string>
+    <string name="enterprice">Please Enter Price</string>
+    <string name="selectdestination">Please Select Destination</string>
+    <string name="Chaff">Chaff cutter</string>
+    <string name="Plougher">Plougher</string>
+    <string name="Sprayer">Sprayer</string>
+    <string name="Puddler">Puddler</string>
+    <string name="survey">Surveyer</string>
+    <string name="farmerserveyar">Farmer Transport service questioner</string>
+    <string name="vendortransport">Vendor Transport Service</string>
+    <string name="qr">QR</string>
+    <string name="validateAttachments">Please Select do you  Have Attachments or not</string>
+    <string name="validatevehicleAttachments">Please Select Vehicle Attachments</string>
+    <string name="entercharges">Please Enter Charges Per Acre</string>
+    <string name="nofarmer">No Farmer Found</string>
+    <string name="otherspecification">Specify Other</string>
+    <string name="tansportation_note">ಎಫ್ಎಫ್ಬಿ  ಸಂಗ್ರಹದ ಸಮಯದಲ್ಲಿ ಪ್ಲಾಟ್ ಘೋಷಿಸದಿದ್ದರೆ, ಎಲ್ಲಾ ಪ್ಲಾಟ್ಗಳ ಸರಾಸರಿ ಸಾರಿಗೆ ದರವನ್ನು ಲೆಕ್ಕಹಾಕಲಾಗುತ್ತದೆವಯಸ್ಸು, ಗಾತ್ರ ಮತ್ತು ನಿರೀಕ್ಷಿತ ಎಫ್ಎಫ್ಬಿ ಆಧರಿಸಿ.</string>
+    <string name="transportationrates">ಸಾರಿಗೆ ದರಗಳು</string>
+    <string name="rate">ಪ್ರತಿ ಟನ್‌ಗೆ ದರ (ರೂ)</string>
+
+    <string name="quickpay_details">ತ್ವರಿತ ವೇತನ ವಿವರಗಳು</string>
+    <string name="collectionsdetails">ಸಂಗ್ರಹ ವಿವರಗಳು</string>
+    <string name="ffbratenorthere"><![CDATA[<p>ನಿಮ್ಮ ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ಒಂದು <b>ತ್ವರಿತ ವೇತನ ದರವನ್ನು</b> ಹೊಂದಿಲ್ಲ. ತ್ವರಿತ ವೇತನ ವಿನಂತಿಯನ್ನು ಹೆಚ್ಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ</p>]]></string>
+
+    <string name="transportservice">ಸಾರಿಗೆ ಸೇವೆ</string>
+    <string name="trans_type">ಸಾರಿಗೆ ಪ್ರಕಾರ</string>
+    <string name="vehicle_type">ವಾಹನದ ಪ್ರಕಾರ</string>
+    <string name="fromlocation">ಸ್ಥಳದಿಂದ</string>
+    <string name="tolocation">ಸ್ಥಳಕ್ಕೆ</string>
+    <string name="transportprice">ಸಾರಿಗೆ ಬೆಲೆ (ರೂ)</string>
+    <string name="str_select_plots">ಪಪ್ಲಾಟ್(ಎಸ್) ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="Validtransport">ದಯವಿಟ್ಟು ಸಾರಿಗೆ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="Validlist">ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಂದು ಪ್ಲಾಟ್  ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="validatefromlocation">ದಯವಿಟ್ಟು ಸ್ಥಳದಿಂದ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="validatetolocation">ದಯವಿಟ್ಟು ಸ್ಥಳಕ್ಕೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="validatevehiclenumber">ದಯವಿಟ್ಟು ವಾಹನದ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="validatedrivername">ದಯವಿಟ್ಟು ಚಾಲಕ ಹೆಸರನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="tranportprice">ದಯವಿಟ್ಟು ಸಾರಿಗೆ ಬೆಲೆಯನ್ನು ನಮೂದಿಸಿ (ರೂ.)</string>
+    <string name="success_transport">ಸಾರಿಗೆ ವಿನಂತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="validatevehiclenumber1">ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ವಾಹನ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="str_selected_plots">ಆಯ್ದ ಪ್ಲಾಟ್(ಗಳು)</string>
+    <string name="farmer_namewithcode">ರೈತ ಹೆಸರು (ರೈತ ಕೋಡ್)</string>
+    <string name="transportTprice">Transport Cost(Rs)</string>
+    <string name="transgst">Transport GST(Rs)</string>
+    <string name="totaltransportcost">Total Transport Amount (Rs)</string>
+    <string name="transamount">Transport Amount(Rs)</string>
+    <string name="tsgst_amount">Transport SGST (Rs)</string>
+    <string name="tcgst_amount">Transport CGST (Rs)</string>
+    <string name="trnstotal_amt">Total Transport  Amount (Rs)</string>
+
+    <string name="endusermsgnew">An Error occured while raising a fertilizer request</string>
+    <string name="edibleoil">వంట నునె</string>
+    <string name="success_edible">వంట నునె అభ్యర్థన విజయవంతంగా సమర్పించబడింది</string>
+    <string name="Categorytype">Category Type</string>
+
+    <!-- we need to use video ids instead of video link -->
+    <string-array name="switch_tabs">
+        <item>@string/fertgodown</item>
+        <item>ಸಂಗ್ರಹ ಕೇಂದ್ರಗಳು</item>
+        <item>ಗಿರಣಿಗಳು</item>
+        <item>ನರ್ಸರಿಗಳು</item>
+    </string-array>
+
+</resources>
+

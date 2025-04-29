@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/backlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:src="@drawable/ic_left" />
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/home"
+                android:textColor="#ff0000ff" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/back"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+
+                android:fontFamily="@font/hind_semibold"
+                android:text="@string/quickPay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backlinear"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backlinear"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/lin_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginRight="@dimen/_8dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:background="@drawable/collect_bg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonConfirm"
+                    style="@style/Common_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sign"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_bg"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/confirm_req" />
+
+
+                <LinearLayout
+                    android:id="@+id/sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayou"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="save"
+
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/text_digital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/hind_semibold"
+                            android:drawableRight="@drawable/star"
+                            android:drawablePadding="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/digital_signature"
+                            android:textColor="@color/white_new"
+                            android:textSize="@dimen/album_title"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginEnd="@dimen/margin_15"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/clear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHighlight="#f00"
+                            android:textColorLink="#0f0"
+                            android:visibility="gone"
+                            android:fontFamily="@font/hind_semibold"
+                            android:text="Click here for Signature"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+                    <in.calibrage.palm360fa.common.SignatureView
+                        xmlns:sign="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/signature_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_bg" />
+                </LinearLayout>
+
+                <!--        <LinearLayout-->
+                <!--            android:id="@+id/linearLayou"-->
+                <!--            android:layout_width="fill_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/sign"-->
+                <!--            android:layout_marginTop="13dp"-->
+
+                <!--            android:orientation="horizontal">-->
+
+                <!--            <CheckBox-->
+                <!--                android:id="@+id/checkBox"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="@string/i_have_agree"-->
+                <!--                android:textColor="@color/white"-->
+                <!--                android:textSize="16dp"-->
+
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/terms"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_below="@+id/lin_eight"-->
+                <!--                            android:layout_marginStart="@dimen/margin_5"-->
+                <!--                            android:text="@string/terms_conditions"-->
+                <!--                            android:textColor="@color/colorOrange2"-->
+                <!--                            android:textSize="16dp" />-->
+                <!--        </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/linearLayou"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/terms_cond"
+
+
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_have_agree"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lin_eight"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:text="@string/terms_conditions"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_zero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/quantity_mt"
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dot0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15sp"
+                        android:text=":"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_quntity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_toRightOf="@+id/dot0"
+                        android:hint=""
+                        android:text="0"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_zero"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/ffb_flot"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text=":"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_flat_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_toRightOf="@+id/dot1"
+                        android:hint=""
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_on"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text="@string/amount_of_FFB"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dot2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1sp"
+                        android:text=":"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvtext_item_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_toRightOf="@+id/dot2"
+                        android:hint=""
+                        android:text="0"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lin_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_two"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/convenience_charge"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text=":"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvtext_item_seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_toRightOf="@+id/dot3"
+                        android:hint="0"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lin_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_pay"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/text_quick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/quick_pay"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dotq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text=":"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_quickpay_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_toRightOf="@+id/dotq"
+                        android:hint="0"
+                        android:text=""
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_three"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text="@string/closingBal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text=":"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvtext_item_nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_toRightOf="@+id/dot4"
+                        android:fontFamily="@font/hind_semibold"
+                        android:hint="0"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lin_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvtext_item_eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/total_amt_pay"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dot5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5sp"
+                        android:text=":"
+                        android:fontFamily="@font/hind_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvtext_item_fifteen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="@font/hind_semibold"
+                        android:layout_toRightOf="@+id/dot5"
+                        android:hint=""
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/album_title"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/terms_cond"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_five"
+
+                    android:background="@drawable/terms_bg"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/termss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lin_eight"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:fontFamily="@font/hind_semibold"
+                        android:text="@string/terms_conditions"
+                        android:textColor="@color/colorOrange2"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/measurement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="1dp"
+                        android:editable="false"
+                        android:fontFamily="@font/hind_semibold"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:text="@string/loan_message"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tvtext_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/payment_summary"
+                    android:fontFamily="@font/hind_semibold"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/white_new"
+                    android:textSize="@dimen/text_size_16"
+
+                    />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/lin_four"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/line_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

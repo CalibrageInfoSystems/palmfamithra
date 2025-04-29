@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fert_baground"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+
+
+
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/lin_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3sp"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/dot8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1sp"
+                android:text="@string/comments"
+                android:textColor="@color/colorOrange"
+android:layout_gravity="center"
+                android:fontFamily="@font/hind_semibold"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comments_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="1sp"
+                android:text="@string/comments"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hind_semibold"
+                android:textSize="14dp"
+               />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:visibility="gone"
+
+            android:id="@+id/no_comments"
+            android:fontFamily="@font/hind_semibold"
+            android:gravity="center"
+            android:text="@string/nocomments"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_14dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        style="@style/Common_Button"
+        android:text="Ok"
+        />
+
+</LinearLayout>

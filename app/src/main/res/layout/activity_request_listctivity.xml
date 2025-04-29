@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="in.calibrage.palm360fa.Views.Activities.RequestListctivity">
+<androidx.appcompat.widget.Toolbar
+    android:visibility="visible"
+    style="@style/ToolBarTheme.ToolBarStyle"
+    android:id="@+id/toolbar"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorOrange_head" >
+    <TextView
+        android:textColor="@color/white_new"
+        android:textAlignment="textStart"
+android:fontFamily="@font/hind_semibold"
+        android:id="@+id/txt_name"
+       android:textSize="@dimen/text_size_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:id="@+id/no_data"
+        android:fontFamily="@font/hind_semibold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_req_found"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/margin_20" />
+</LinearLayout>
+
+
+</LinearLayout>

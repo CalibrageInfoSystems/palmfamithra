@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_edge"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@color/colorOrange"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:paddingTop="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_10"
+                android:text="@string/terms_conditionss"
+                android:fontFamily="@font/hind_semibold"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtclose"
+            android:layout_width="30dp"
+            android:layout_height="44.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+
+            android:text="X"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_two"
+        android:orientation="horizontal"
+        android:background="@drawable/ed_bg"
+        android:weightSum="1"
+
+        >
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/measurement"
+
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/prunning"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/pru_amount"
+
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/harv"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+
+            android:layout_gravity="center"
+            android:text="@string/harv_amount" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+        <TextView
+
+            android:id="@+id/un1"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="@string/intercrop_prunning" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+        <TextView
+
+            android:id="@+id/un2"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="@string/harv_intercrop" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_term"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/service_charge"
+            style="@style/Common_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     android:textAlignment="textStart"
+            android:text="@string/inter_coco"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/recycler_term"
+
+            />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/service_charge"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="5dp"
+            android:paddingRight="@dimen/margin_10"
+            android:text="@string/got_it"
+            android:textAlignment="center"
+            style="@style/Common_Button"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

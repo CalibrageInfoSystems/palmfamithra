@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vehicleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:fontFamily="@font/hind_semibold"
+        android:text="@string/twowheleertractor"
+        android:textColor="@color/blacknew"
+        android:textSize="@dimen/album_title" />
+
+
+    <LinearLayout
+        android:id="@+id/vehiclepriceslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/d1pricelyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/hind_semibold"
+                android:text="@string/destination1price"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title" />
+
+            <EditText
+                android:id="@+id/destination1_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edtt_bg"
+                android:cursorVisible="true"
+                android:fontFamily="@font/hind_semibold"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:hint="@string/Rs"
+                android:paddingLeft="15dp"
+                android:singleLine="false"
+                android:textColor="@color/blacknew"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/album_title"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d2pricelyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative1"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/hind_semibold"
+                android:text="@string/destination2price"
+                android:textColor="@color/blacknew"
+                android:textSize="@dimen/album_title" />
+
+
+            <EditText
+                android:id="@+id/destination2_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edtt_bg"
+                android:cursorVisible="true"
+                android:fontFamily="@font/hind_semibold"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:hint="@string/Rs"
+                android:paddingLeft="15dp"
+                android:singleLine="false"
+                android:textColor="@color/blacknew"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/album_title"></EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

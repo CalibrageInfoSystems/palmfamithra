@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+    <!-- Disease Details-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/margin_5"
+            >
+
+            <TextView
+                android:id="@+id/DiseaseLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/disease"
+                android:paddingLeft="8dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/Disease"
+                android:textColor="@color/colorOrange2"
+                android:layout_toRightOf="@+id/DiseaseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/disease"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+                android:id="@+id/ChemicalLabel"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DiseaseLabel"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:text="@string/Chemical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title"
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Chemical"
+                android:hint="@string/Chemical"
+                android:layout_toRightOf="@+id/ChemicalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingLeft="4dp"
+                android:layout_below="@id/DiseaseLabel"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/RecommendedChemicalLabel"
+                android:text="@string/RecommendedChemical"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ChemicalLabel"
+                android:paddingLeft="8dp"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/RecommendedChemical"
+                android:hint="@string/RecommendedChemical"
+                android:layout_toRightOf="@+id/RecommendedChemicalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ChemicalLabel"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/album_title_padding" android:fontFamily="@font/hind_semibold"
+
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <!-- <TextView
+            android:id="@+id/UOMNameLabel"
+            android:layout_marginStart="8dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/UOMName"
+            android:paddingLeft="@dimen/album_title_padding"
+            android:paddingRight="2dp"
+            android:paddingTop="@dimen/album_title_padding"
+            android:textColor="@color/album_title"
+            android:layout_below="@+id/RecommendedChemicalLabel"
+            android:textStyle="bold"
+            android:textSize="@dimen/album_title" />
+            <TextView
+            android:id="@+id/UOMName"
+            android:layout_toRightOf="@+id/UOMNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/UOMName"
+            android:layout_below="@id/RecommendedChemicalLabel"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/album_title_padding"
+            android:paddingTop="@dimen/album_title_padding"
+            android:textSize="@dimen/album_title" />-->
+            <TextView
+                android:id="@+id/DosageLabel"
+                android:layout_marginStart="8dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dosage_only"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="2dp"
+                android:paddingTop="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/RecommendedChemicalLabel"
+                android:textStyle="bold"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/Dosage"
+                android:layout_toRightOf="@+id/DosageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/dosage_only"
+                android:layout_below="@id/RecommendedChemicalLabel"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+            <TextView
+                android:id="@+id/UOMName"
+                android:layout_toRightOf="@+id/Dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/UOMName"
+                android:layout_below="@id/RecommendedChemicalLabel"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+            <TextView
+                android:id="@+id/CommentsLabel"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DosageLabel"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-1dp"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:fontFamily="@font/hind_semibold"
+                android:paddingTop="@dimen/album_title_padding"
+                android:paddingRight="2dp"
+                android:text="@string/comments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/album_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Comments"
+                android:layout_toRightOf="@+id/CommentsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/comments"
+                android:fontFamily="@font/hind_semibold"
+                android:layout_below="@id/DosageLabel"
+                android:paddingLeft="5dp"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="@dimen/album_title_padding"
+                android:textSize="@dimen/album_title" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+tools:context="in.calibrage.palm360fa.Views.Activities.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/appbg"
+        android:foreground="@color/half_black2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:fontFamily="@font/hind_semibold"
+            android:id="@+id/otp_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.1"
+            android:text=""
+
+            android:textColor="@color/white_new"
+            android:textSize="@dimen/text_size" />
+
+    <in.calibrage.palm360fa.common.PinEntryEditText
+
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="@dimen/_16"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:digits="1234567890"
+        android:textIsSelectable="false"
+            android:inputType="number"
+            android:maxLength="6"
+
+        android:textSize="20sp"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+
+            android:id="@+id/btn_otp_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_margin="3dp"
+            style="@style/Common_Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resend_otp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:autoLink="web"
+            android:text="@string/re_send"
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@font/hind_semibold"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+
+            android:clickable="true"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/backlinear"
+        android:background="@color/transparent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_left"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:id="@+id/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/back"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/hind_semibold"
+                android:text="@string/transportservice"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/home"
+                android:textColor="#ff0000ff"
+                android:layout_marginTop="3dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/backlinear"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/backlinear"
+        android:id="@+id/spinner"
+        android:padding="@dimen/_10sp"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:drawableRight="@drawable/star"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/trans_type"
+        android:textColor="@color/white_new"
+        android:textSize="@dimen/album_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/spinner_bg"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8dp"
+            android:src="@drawable/arrow_down" />
+
+        <Spinner
+            android:id="@+id/Transport_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@null"
+            android:minHeight="0dp" />
+    </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/newtextlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:paddingStart="@dimen/_10sp"
+            android:layout_marginStart="8dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/hind_semibold"
+
+                android:text="@string/str_select_plots"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14dp"
+                />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/spinner"
+
+            android:layout_weight="0.9"
+            android:visibility="gone"
+            android:clipToPadding="false"
+            android:padding="@dimen/_10sp"
+
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@color/colorPrimary"
+            android:scrollbars="vertical" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Approverecycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/spinner"
+
+            android:visibility="gone"
+            android:layout_weight="0.9"
+            android:clipToPadding="false"
+            android:padding="@dimen/_10sp"
+
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@color/colorPrimary"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+         android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+android:visibility="gone"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/hind_semibold"
+                android:gravity="center"
+                android:text="@string/no_plots"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/margin_20"
+               />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/_45dp"
+
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/next" />
+    </LinearLayout>
+</RelativeLayout>

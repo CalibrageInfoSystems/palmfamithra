@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_two"
+        android:orientation="horizontal"
+        android:layout_marginLeft="3dp"
+        android:weightSum="1"
+
+        >
+
+        <TextView
+
+            android:id="@+id/pack"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hind_semibold"
+            android:layout_weight=".5"
+            android:text="@string/Package"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/discount"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/discount"
+            android:fontFamily="@font/hind_semibold"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="14dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@drawable/devider_line" />
+</LinearLayout>

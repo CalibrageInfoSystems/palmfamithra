@@ -1,16 +1,19 @@
 apply plugin: 'com.android.application'
+
+
 //in.calibrage.AkshayaFA
 android {
-    compileSdkVersion 29
+    namespace 'in.calibrage.palm360fa'
+    compileSdkVersion 34
     buildToolsVersion "29.0.2"
     ndkVersion "21.4.7075529"
     defaultConfig {
-       applicationId "in.calibrage.fieldassistant"
+       applicationId "in.calibrage.palm360fa"
        //applicationId "in.calibrage.AkshayaFA"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 24
-        versionName "24.0" //6th march
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0" //6th march
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
@@ -26,6 +29,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
         }
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 }
 

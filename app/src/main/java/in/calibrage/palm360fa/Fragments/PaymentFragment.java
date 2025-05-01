@@ -29,6 +29,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import in.calibrage.palm360fa.BuildConfig;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
@@ -48,7 +49,7 @@ import dmax.dialog.SpotsDialog;
 import in.calibrage.palm360fa.Adapter.PaymentAdapter;
 import in.calibrage.palm360fa.Adapter.PaymentRequestModel;
 import in.calibrage.palm360fa.Adapter.PaymentResponseModel;
-import in.calibrage.palm360fa.BuildConfig;
+
 import in.calibrage.palm360fa.Model.ExportPayments;
 import in.calibrage.palm360fa.Model.GetBankDetailsByFarmerCode;
 import in.calibrage.palm360fa.R;

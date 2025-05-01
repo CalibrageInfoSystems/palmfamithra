@@ -995,48 +995,39 @@ String clustername;
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        switch (id) {
-            case R.id.img_delete1:
-                images.remove(0);
-                displayImages();
-                break;
-            case R.id.img_delete2:
-                images.remove(1);
-                displayImages();
-                break;
-            case R.id.img_delete3:
-                images.remove(2);
-                displayImages();
-                break;
 
-            case R.id.imageViewRecord:
-                prepareforRecording();
-                startRecording();
-
-                break;
-            case R.id.imageViewStop:
-                prepareforStop();
-                stopRecording();
-
-                break;
-            case R.id.imageViewPlay:
-                if (!isPlaying && fileName != null) {
-                    isPlaying = true;
-                    if (mPlayer != null) {
-                          lastProgress = 0;
-                        chronometer.setBase(SystemClock.elapsedRealtime());
-                        startPlaying();
-                    } else {
-                        startPlaying();
-                    }
-
+        if (id == R.id.img_delete1) {
+            images.remove(0);
+            displayImages();
+        } else if (id == R.id.img_delete2) {
+            images.remove(1);
+            displayImages();
+        } else if (id == R.id.img_delete3) {
+            images.remove(2);
+            displayImages();
+        } else if (id == R.id.imageViewRecord) {
+            prepareforRecording();
+            startRecording();
+        } else if (id == R.id.imageViewStop) {
+            prepareforStop();
+            stopRecording();
+        } else if (id == R.id.imageViewPlay) {
+            if (!isPlaying && fileName != null) {
+                isPlaying = true;
+                if (mPlayer != null) {
+                    lastProgress = 0;
+                    chronometer.setBase(SystemClock.elapsedRealtime());
+                    startPlaying();
                 } else {
-                    isPlaying = false;
-                    stopPlaying();
+                    startPlaying();
                 }
+            } else {
+                isPlaying = false;
+                stopPlaying();
+            }
         }
-
     }
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -1073,7 +1064,7 @@ String clustername;
     private void startRecording() {
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mRecorder.setOutputFormat(MediaRecorder.AudioEncoder.AMR_NB);
+        mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
 
         File root = android.os.Environment.getExternalStorageDirectory();
         File file = new File(root.getAbsolutePath() + "/3FAkshaya/Audios");

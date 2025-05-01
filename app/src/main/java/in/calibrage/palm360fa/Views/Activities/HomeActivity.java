@@ -303,26 +303,26 @@ TextView dialogMessage;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-      //  Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
-        switch (item.getItemId()) {
-            case R.id.nav_logout:
-                logOutDialog();
-                return true;
-            case R.id.My_request:
-                Intent intent = new Intent(HomeActivity.this, myRequest_Activity.class);
-                startActivity(intent);
-                return true;
-            case R.id.languageTitle:
+        int itemId = item.getItemId();
 
-                selectLanguage();
-                return true;
-            case R.id.nav_farmer_logout:
-                logOutDialog_farmer();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (itemId == R.id.nav_logout) {
+            logOutDialog();
+            return true;
+        } else if (itemId == R.id.My_request) {
+            Intent intent = new Intent(HomeActivity.this, myRequest_Activity.class);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.languageTitle) {
+            selectLanguage();
+            return true;
+        } else if (itemId == R.id.nav_farmer_logout) {
+            logOutDialog_farmer();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
         }
     }
+
 
     private void logOutDialog_farmer() {
 

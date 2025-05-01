@@ -273,9 +273,9 @@ public class PinEntryEditText extends AppCompatEditText {
 
         TypedValue outValue = new TypedValue();
 
-        context.getTheme().resolveAttribute(R.attr.colorControlActivated,
+/*        context.getTheme().resolveAttribute(R.attr.colorControlActivated,
 
-                outValue, true);
+                outValue, true);*/ //TODO
 
         int colorSelected = outValue.data;
 

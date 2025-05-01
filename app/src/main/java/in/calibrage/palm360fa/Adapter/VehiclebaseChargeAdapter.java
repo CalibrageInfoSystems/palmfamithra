@@ -340,7 +340,7 @@ int CC1,CC2,HirebaseID1,HirebaseID2;
         public EditText price1,price2;
         public TextView tvDate;
         public CheckBox chkSelected;
-        Button add;
+       // Button add;
         public CardView card_view;
         public QuickPayModel singlestudent;
         private Subscription mSubscription;
@@ -358,7 +358,7 @@ int CC1,CC2,HirebaseID1,HirebaseID2;
             destination2 = (Spinner) itemLayoutView.findViewById(R.id.destination2);
             price1 = (EditText) itemLayoutView.findViewById(R.id.price);
             price2 = (EditText) itemLayoutView.findViewById(R.id.price2);
-            add = (Button) itemLayoutView.findViewById(R.id.add);
+            //add = (Button) itemLayoutView.findViewById(R.id.add);
             hiring_basics =(Spinner)itemLayoutView.findViewById(R.id.hiring_basics) ;
             hiring_basics2=(Spinner)itemLayoutView.findViewById(R.id.hiring_basics2) ;
 

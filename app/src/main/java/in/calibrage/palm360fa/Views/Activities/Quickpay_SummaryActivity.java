@@ -477,7 +477,7 @@ public class Quickpay_SummaryActivity extends BaseActivity {
     public String saveImage(Bitmap myBitmap) {
 
 
-        Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.bg_button_normal); // the original file yourimage.jpg i added in resources
+        Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.button_bg); // the original file yourimage.jpg i added in resources
         dest = Bitmap.createBitmap(src.getWidth(), src.getHeight(), Bitmap.Config.ARGB_8888);
 
         String yourText = "My custom Text adding to Image";

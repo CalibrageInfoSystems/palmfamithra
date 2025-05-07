@@ -3,12 +3,18 @@ package in.calibrage.palm360fa.Views.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -20,6 +26,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import in.calibrage.palm360fa.Model.LoginResponse;
 import in.calibrage.palm360fa.R;
@@ -29,6 +36,17 @@ import in.calibrage.palm360fa.localData.SharedPrefsData;
 
 import static in.calibrage.palm360fa.common.CommonUtil.updateResources;
 
+import com.android.volley.Request;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+
+import org.json.JSONObject;
+
+import java.util.List;
+import java.util.Locale;
+
 public class HomeActivity extends AppCompatActivity {
 LinearLayout Labour,pole,fertilizer,loan,visit,quickpay,collections,payments,crop,special_button,vendorservy_button,farmerservey_button, bioLab,trans_button,edibleoil_button;
 ImageView logout,ic_request;
@@ -37,6 +55,11 @@ TextView dialogMessage;
     private Button ok_btn, cancel_btn;
     LoginResponse created_user;
     String activityRights;
+    private TextView textView;
+    private FusedLocationProviderClient fusedLocationClient;
+
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 100;
+    private static final String API_KEY = "2f56179db0d8e7cb63a4396f80d7c4f8";
     LinearLayout special_payl,spe_border;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +100,98 @@ TextView dialogMessage;
         edibleoil_button=findViewById( R.id.edibleoil_button);
        // special_payl = findViewById(R.id.special_payl);
         //spe_border = findViewById(R.id.spe_border);
+        textView = findViewById(R.id.weather);
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
+        checkLocationPermission();
     }
+
+    private void checkLocationPermission() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                    LOCATION_PERMISSION_REQUEST_CODE
+            );
+        } else {
+            fetchLocation();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                fetchLocation();
+            } else {
+                Toast.makeText(this, "Location permission denied!", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    @SuppressLint("MissingPermission")
+    private void fetchLocation() {
+        fusedLocationClient.getLastLocation()
+                .addOnSuccessListener(location -> {
+                    if (location != null) {
+                        double latitude = location.getLatitude();
+                        double longitude = location.getLongitude();
+                        String weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude +
+                                "&lon=" + longitude + "&units=metric&appid=" + API_KEY;
+
+                        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+                        try {
+                            List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+                            String city = "Unknown city";
+                            if (addresses != null && !addresses.isEmpty()) {
+                                // Try locality first, fallback to sub-admin if needed
+                                city = addresses.get(0).getLocality();
+                                if (city == null) {
+                                    city = addresses.get(0).getSubAdminArea();
+                                }
+                            }
+                            fetchWeatherData(weatherUrl, city);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            fetchWeatherData(weatherUrl, "Unknown city");
+                        }
+
+                    } else {
+                        textView.setText("Could not get location.");
+                    }
+                })
+                .addOnFailureListener(e -> Toast.makeText(this, "Failed to get location", Toast.LENGTH_SHORT).show());
+    }
+
+    private void fetchWeatherData(String url, String city) {
+        StringRequest request = new StringRequest(Request.Method.GET, url,
+                response -> {
+                    try {
+                        JSONObject jsonResponse = new JSONObject(response);
+                        JSONObject main = jsonResponse.getJSONObject("main");
+                        String temperature = main.getString("temp");
+
+                        String description = jsonResponse.getJSONArray("weather")
+                                .getJSONObject(0)
+                                .getString("description");
+                        String capitalizedDescription = description.substring(0, 1).toUpperCase() + description.substring(1);
+
+                        textView.setText(capitalizedDescription + ", " + temperature + "°C in " + city);
+                    } catch (Exception e) {
+                        textView.setText("Error parsing data!");
+                        e.printStackTrace();
+                    }
+                },
+                error -> {
+                    textView.setText("Error fetching weather!");
+                    error.printStackTrace();
+                });
+
+        Volley.newRequestQueue(this).add(request);
+    }
+
+
     private void setViews() {
         created_user = SharedPrefsData.getCreatedUser(HomeActivity.this);
 

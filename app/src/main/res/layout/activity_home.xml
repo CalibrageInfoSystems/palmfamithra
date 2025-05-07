@@ -8,7 +8,7 @@
     tools:context=".Views.Activities.HomeActivity"
     android:orientation="vertical"
     android:background="@color/light_orange"
-    android:layout_marginBottom="90dp">
+   >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:background="@drawable/top_background"
                 android:orientation="vertical"
                 android:padding="16dp">
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Views"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/bright_orange"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -60,7 +60,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="8dp">
+
+                android:padding="5dp"
+                android:layout_margin="4dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
@@ -68,7 +70,7 @@
                     android:id="@+id/collections_button"
                     android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_margin="8dp"
+                    android:layout_margin="4dp"
                     android:background="@drawable/box_layout">
 
                     <FrameLayout
@@ -102,7 +104,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center_vertical"
-                    android:layout_margin="8dp"
+                    android:layout_margin="4dp"
                     android:id="@+id/payments_button"
                     android:background="@drawable/box_layout">
                     <FrameLayout
@@ -136,7 +138,7 @@
                     android:id="@+id/recommendations_button"
                     android:orientation="vertical"
                     android:gravity="center_vertical"
-                    android:layout_margin="8dp"
+                    android:layout_margin="4dp"
                     android:background="@drawable/box_layout">
                     <FrameLayout
                         android:layout_width="wrap_content"
@@ -169,20 +171,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Request Services"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/bright_orange"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="5dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
+                android:padding="5dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_margin="8dp">
+                    android:layout_margin="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
@@ -190,7 +193,7 @@
                         android:orientation="vertical"
                         android:id="@+id/fertlizer_button"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:background="@drawable/box_layout">
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -223,7 +226,7 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:id="@+id/pole_button"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:background="@drawable/box_layout">
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -256,7 +259,7 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:id="@+id/bioLab_button"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:background="@drawable/box_layout">
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -287,14 +290,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_margin="8dp">
+                    android:layout_margin="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:id="@+id/labour_button"
                         android:background="@drawable/box_layout">
                         <FrameLayout
@@ -327,7 +330,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:id="@+id/Quickpay_button"
                         android:background="@drawable/box_layout">
                         <FrameLayout
@@ -360,7 +363,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:id="@+id/visit_button"
                         android:background="@drawable/box_layout">
                         <FrameLayout
@@ -392,7 +395,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_margin="8dp">
+                    android:layout_margin="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
@@ -400,7 +403,7 @@
                         android:orientation="vertical"
                         android:id="@+id/loan_button"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:background="@drawable/box_layout">
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -433,7 +436,7 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:id="@+id/trans_button"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:background="@drawable/box_layout">
                         <FrameLayout
                             android:layout_width="wrap_content"
@@ -465,7 +468,7 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:id="@+id/edibleoil_button"
                         android:background="@drawable/box_layout">
                         <FrameLayout
@@ -499,7 +502,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Survey"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/bright_orange"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -508,12 +511,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_margin="8dp"
+                android:layout_margin="4dp"
+                android:paddingStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:paddingBottom="24dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_weight="1"
+                    android:padding="5dp"
                     android:id="@+id/farmerservey_button"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -552,6 +558,7 @@
                     android:orientation="vertical"
                     android:gravity="center_vertical"
                     android:layout_margin="8dp"
+                    android:padding="5dp"
                     android:background="@drawable/box_layout">
                     <FrameLayout
                         android:layout_width="wrap_content"

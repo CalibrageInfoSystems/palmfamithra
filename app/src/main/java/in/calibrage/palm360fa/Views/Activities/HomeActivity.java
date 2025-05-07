@@ -30,7 +30,7 @@ import in.calibrage.palm360fa.localData.SharedPrefsData;
 import static in.calibrage.palm360fa.common.CommonUtil.updateResources;
 
 public class HomeActivity extends AppCompatActivity {
-CardView Labour,pole,fertilizer,loan,visit,quickpay,collections,payments,crop,special_button,vendorservy_button,farmerservey_button, bioLab,trans_button,edibleoil_button;
+LinearLayout Labour,pole,fertilizer,loan,visit,quickpay,collections,payments,crop,special_button,vendorservy_button,farmerservey_button, bioLab,trans_button,edibleoil_button;
 ImageView logout,ic_request;
 TextView dialogMessage;
     boolean doubleBackToExitPressedOnce = false;
@@ -50,8 +50,8 @@ TextView dialogMessage;
             updateResources(this, "en-US");
         setContentView(R.layout.activity_home);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+      /*  Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
         /* intializing and assigning ID's */
         initViews();
         /* Navigation's and using the views */
@@ -69,7 +69,7 @@ TextView dialogMessage;
         collections=findViewById(R.id.collections_button);
         payments=findViewById(R.id.payments_button);
         crop=findViewById(R.id.recommendations_button);
-        special_button=findViewById( R.id.special_button);
+       // special_button=findViewById( R.id.special_button);
         vendorservy_button=findViewById( R.id.vendorservy_button);
         farmerservey_button=findViewById( R.id.farmerservey_button);
         bioLab=findViewById(R.id.bioLab_button);
@@ -197,7 +197,7 @@ TextView dialogMessage;
         });
 
 
-        special_button.setOnClickListener(new View.OnClickListener() {
+/*        special_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
@@ -205,7 +205,7 @@ TextView dialogMessage;
                 startActivity(intent);
 
             }
-        });
+        });*/
 
 
 

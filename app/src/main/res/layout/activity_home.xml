@@ -1,391 +1,1183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/shape"
-    tools:context="in.calibrage.palm360fa.Views.Activities.Main2Activity">
-
-
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/transparent"
-            app:titleTextColor="@color/white"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_below="@+id/toolbar"
-    android:layout_height="match_parent"
-
+    tools:context=".Views.Activities.HomeActivity"
     android:orientation="vertical"
-    android:weightSum="12"
+    android:background="@color/light_orange"
+    android:layout_marginBottom="90dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/top_background"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-    >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning!"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weather"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
 
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Views"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/bright_orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/collections_button"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/box_layout">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ffb_collection"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grower Collections"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:id="@+id/payments_button"
+                    android:background="@drawable/box_layout">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/bill_1"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grower Ledger"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/recommendations_button"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/box_layout">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/crop_main_sm_1"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Crop Maintenance Visits"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request Services"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/bright_orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/fertlizer_button"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/bag_seedling_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fertilizer"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/pole_button"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/truck_tow_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Equipment"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/bioLab_button"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/flask_gear_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bio Lab"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:id="@+id/labour_button"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/user_helmet_safety_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Labour"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:id="@+id/Quickpay_button"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/time_fast_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quick Pay"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:id="@+id/visit_button"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/region_pin_alt_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visit"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/loan_button"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/sack_dollar_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loan"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:id="@+id/trans_button"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/olive_oil_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transport Service"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:id="@+id/edibleoil_button"
+                        android:background="@drawable/box_layout">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle_background"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/olive_oil_1"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edible oil"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:layout_marginTop="6dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Survey"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/bright_orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:paddingBottom="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/farmerservey_button"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/box_layout">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ffb_collection"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer Transport service questioner"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:id="@+id/vendorservy_button"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/box_layout">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_background"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/bill_1"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vendor Transport Service"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        tools:context="in.calibrage.palm360fa.Views.Activities.Main2Activity">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                app:titleTextColor="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_5"
+
         android:orientation="vertical"
-        android:weightSum="12">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:weightSum="12"
 
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-            <TextView
-                style="@style/Common_textView_title_big"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/view"
-                android:textColor="@color/white" />
-
-
-        </LinearLayout>
-
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_100dp"
-                android:layout_marginBottom="3dp"
-                android:weightSum="1"
-                android:layout_weight="3"
-                android:orientation="horizontal"
-              >
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/collections_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.33333"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/collection_img"
-                            style="@style/Common_image"
-                            android:src="@drawable/ffb_collection" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:maxLines="1"
-                            android:layout_below="@+id/collection_img"
-                            android:text="@string/collection" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/payments_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.33333"
-                    android:background="@color/red"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-
-                            style="@style/Common_image"
-                            android:src="@drawable/passbook" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:text="@string/payments" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/recommendations_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.33333"
-                    android:background="@color/red"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/oil_palm" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:maxLines="2"
-                            android:text="@string/recommendationss" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
+        >
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
-            <TextView
-                style="@style/Common_textView_title_big"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/req_services"
-                android:textColor="@color/white" />
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_5"
             android:orientation="vertical"
-            android:weightSum="1">
-
-
+            android:weightSum="12">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/home_View_lyt_height"
-                android:layout_weight="0.25"
-                android:weightSum="1">
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/fertlizer_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
+                <TextView
+                    style="@style/Common_textView_title_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view"
+                    android:textColor="@color/white" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/fertilizers" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/fertilizer" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/pole_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:background="@color/red"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/equipment" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/pole" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="@dimen/margin_15"
-                android:layout_marginRight="@dimen/margin_15"
-                android:background="@drawable/line_bg"
-                android:gravity="center" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="1"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                  >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/collections_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.33333"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/collection_img"
+                                style="@style/Common_image"
+                                android:src="@drawable/ffb_collection" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_below="@+id/collection_img"
+                                android:text="@string/collection" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/payments_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.33333"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                style="@style/Common_image"
+                                android:src="@drawable/passbook" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="@string/payments" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/recommendations_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.33333"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/oil_palm" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="2"
+                                android:text="@string/recommendationss" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/home_View_lyt_height"
-                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/Common_textView_title_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/req_services"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
                 android:weightSum="1">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/bioLab_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:background="@color/red"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_View_lyt_height"
+                    android:layout_weight="0.25"
+                    android:weightSum="1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fertlizer_button"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:elevation="8dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
 
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/fertilizers" />
-
-                        <TextView
-                            style="@style/Common_textView"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/biolab" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/labour_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/fertilizers" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fertilizer" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pole_button"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/red"
+                        android:elevation="8dp"
                         android:gravity="center"
-                        android:orientation="vertical">
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/labour" />
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/labour_lable" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/equipment" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pole" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:background="@drawable/line_bg"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_View_lyt_height"
+                    android:layout_weight="0.25"
+                    android:weightSum="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/bioLab_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/fertilizers" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/biolab" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/labour_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/labour" />
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/labour_lable" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:background="@drawable/line_bg"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_View_lyt_height"
+                    android:layout_weight="0.25"
+                    android:weightSum="1">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Quickpay_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:src="@drawable/quick_pay" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/quick" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/visit_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:layout_height="39dp"
+                                android:src="@drawable/visit" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/visit" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:background="@drawable/line_bg"
+                    android:gravity="center" />
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_View_lyt_height"
+                    android:layout_weight="0.25"
+                    android:weightSum="1"
+                     android:gravity="center">
+
+
+
+                     <androidx.cardview.widget.CardView
+                         android:id="@+id/loan_button"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_margin="3dp"
+                         android:layout_weight="0.5"
+                         android:background="@color/red"
+                         android:elevation="8dp"
+                         android:gravity="center"
+                         android:orientation="vertical"
+                         app:cardCornerRadius="6dp">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:gravity="center"
+                             android:orientation="vertical">
+
+                             <ImageView
+                                 style="@style/Common_image"
+                                 android:layout_width="46dp"
+                                 android:src="@drawable/loan" />
+
+                             <TextView
+                                 style="@style/Common_textView"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="@string/loan" />
+                         </LinearLayout>
+                     </androidx.cardview.widget.CardView>
+
+                     <androidx.cardview.widget.CardView
+                         android:id="@+id/trans_button"
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_margin="3dp"
+                         android:layout_weight="0.5"
+                         android:elevation="8dp"
+
+                         android:gravity="center"
+                         android:orientation="vertical"
+                         app:cardCornerRadius="6dp">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:gravity="center"
+                             android:orientation="vertical">
+
+                             <ImageView
+                                 style="@style/Common_image"
+                                 android:src="@drawable/transport_new" />
+
+                             <TextView
+                                 style="@style/Common_textView"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="@string/transportservice" />
+                         </LinearLayout>
+                     </androidx.cardview.widget.CardView>
+                 </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:id="@+id/spe_border"
+                    android:orientation="horizontal"
+                    android:background="@drawable/line_bg"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_View_lyt_height"
+                    android:layout_weight="0.25"
+                    android:weightSum="1"
+                    android:gravity="center">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/edibleoil_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                style="@style/Common_image"
+                                android:layout_width="46dp"
+                                android:src="@drawable/ediableoils" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edibleoil" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+    &lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;
+    &lt;!&ndash;                    android:id="@+id/trans_button"&ndash;&gt;
+    &lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;
+    &lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;
+    &lt;!&ndash;                    android:layout_margin="3dp"&ndash;&gt;
+    &lt;!&ndash;                    android:layout_weight="0.5"&ndash;&gt;
+    &lt;!&ndash;                    android:elevation="8dp"&ndash;&gt;
+
+    &lt;!&ndash;                    android:gravity="center"&ndash;&gt;
+    &lt;!&ndash;                    android:orientation="vertical"&ndash;&gt;
+    &lt;!&ndash;                    app:cardCornerRadius="6dp">&ndash;&gt;
+
+    &lt;!&ndash;                    <LinearLayout&ndash;&gt;
+    &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;
+    &lt;!&ndash;                        android:gravity="center"&ndash;&gt;
+    &lt;!&ndash;                        android:orientation="vertical">&ndash;&gt;
+
+    &lt;!&ndash;                        <ImageView&ndash;&gt;
+    &lt;!&ndash;                            style="@style/Common_image"&ndash;&gt;
+    &lt;!&ndash;                            android:layout_height="39dp"&ndash;&gt;
+    &lt;!&ndash;                            android:src="@drawable/transportmoduleicon" />&ndash;&gt;
+
+    &lt;!&ndash;                        <TextView&ndash;&gt;
+    &lt;!&ndash;                            style="@style/Common_textView"&ndash;&gt;
+    &lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;                            android:text="@string/transportservice" />&ndash;&gt;
+    &lt;!&ndash;                    </LinearLayout>&ndash;&gt;
+    &lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="@dimen/margin_15"
-                android:layout_marginRight="@dimen/margin_15"
-                android:background="@drawable/line_bg"
-                android:gravity="center" />
 
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/home_View_lyt_height"
-                android:layout_weight="0.25"
+                android:layout_weight="0.2"
+                android:visibility="gone"
+                android:id="@+id/special_payl"
                 android:weightSum="1">
+
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Quickpay_button"
+                    android:id="@+id/special_button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:background="@color/red"
+                    android:layout_weight="1"
                     android:elevation="8dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     app:cardCornerRadius="6dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
 
-                        <ImageView
-                            style="@style/Common_image"
-                            android:src="@drawable/quick_pay" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/quick" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/visit_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
-
-                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
@@ -394,330 +1186,125 @@
                         <ImageView
                             style="@style/Common_image"
                             android:layout_height="39dp"
-                            android:src="@drawable/visit" />
+                            android:src="@drawable/special_pay" />
 
                         <TextView
                             style="@style/Common_textView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/visit" />
+                            android:text="@string/special" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
 
 
+
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="@dimen/margin_15"
-                android:layout_marginRight="@dimen/margin_15"
-                android:background="@drawable/line_bg"
-                android:gravity="center" />
-             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/home_View_lyt_height"
-                android:layout_weight="0.25"
-                android:weightSum="1"
-                 android:gravity="center">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-
-                 <androidx.cardview.widget.CardView
-                     android:id="@+id/loan_button"
-                     android:layout_width="0dp"
-                     android:layout_height="match_parent"
-                     android:layout_margin="3dp"
-                     android:layout_weight="0.5"
-                     android:background="@color/red"
-                     android:elevation="8dp"
-                     android:gravity="center"
-                     android:orientation="vertical"
-                     app:cardCornerRadius="6dp">
-
-                     <LinearLayout
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent"
-                         android:gravity="center"
-                         android:orientation="vertical">
-
-                         <ImageView
-                             style="@style/Common_image"
-                             android:layout_width="46dp"
-                             android:src="@drawable/loan" />
-
-                         <TextView
-                             style="@style/Common_textView"
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:text="@string/loan" />
-                     </LinearLayout>
-                 </androidx.cardview.widget.CardView>
-
-                 <androidx.cardview.widget.CardView
-                     android:id="@+id/trans_button"
-                     android:layout_width="0dp"
-                     android:layout_height="match_parent"
-                     android:layout_margin="3dp"
-                     android:layout_weight="0.5"
-                     android:elevation="8dp"
-
-                     android:gravity="center"
-                     android:orientation="vertical"
-                     app:cardCornerRadius="6dp">
-
-                     <LinearLayout
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent"
-                         android:gravity="center"
-                         android:orientation="vertical">
-
-                         <ImageView
-                             style="@style/Common_image"
-                             android:src="@drawable/transport_new" />
-
-                         <TextView
-                             style="@style/Common_textView"
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:text="@string/transportservice" />
-                     </LinearLayout>
-                 </androidx.cardview.widget.CardView>
-             </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginLeft="@dimen/margin_15"
-                android:layout_marginRight="@dimen/margin_15"
-                android:id="@+id/spe_border"
-                android:orientation="horizontal"
-                android:background="@drawable/line_bg"
-                android:gravity="center" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/home_View_lyt_height"
-                android:layout_weight="0.25"
-                android:weightSum="1"
-                android:gravity="center">
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/edibleoil_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:background="@color/red"
-                    android:elevation="8dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
 
-                    <LinearLayout
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/Common_textView_title_big"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5"
+                        android:text="@string/survey"
+                        android:textColor="@color/colorOrange" />
 
-                        <ImageView
-                            style="@style/Common_image"
-                            android:layout_width="46dp"
-                            android:src="@drawable/ediableoils" />
 
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edibleoil" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
-<!--                <androidx.cardview.widget.CardView-->
-<!--                    android:id="@+id/trans_button"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_margin="3dp"-->
-<!--                    android:layout_weight="0.5"-->
-<!--                    android:elevation="8dp"-->
-
-<!--                    android:gravity="center"-->
-<!--                    android:orientation="vertical"-->
-<!--                    app:cardCornerRadius="6dp">-->
-
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:gravity="center"-->
-<!--                        android:orientation="vertical">-->
-
-<!--                        <ImageView-->
-<!--                            style="@style/Common_image"-->
-<!--                            android:layout_height="39dp"-->
-<!--                            android:src="@drawable/transportmoduleicon" />-->
-
-<!--                        <TextView-->
-<!--                            style="@style/Common_textView"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="@string/transportservice" />-->
-<!--                    </LinearLayout>-->
-<!--                </androidx.cardview.widget.CardView>-->
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/home_View_lyt_height"
-            android:layout_weight="0.2"
-            android:visibility="gone"
-            android:id="@+id/special_payl"
-            android:weightSum="1">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/special_button"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="3dp"
-                android:layout_weight="1"
-                android:elevation="8dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:cardCornerRadius="6dp">
 
                 <LinearLayout
 
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
+                    android:layout_height="@dimen/_100dp"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="1"
 
-                    <ImageView
-                        style="@style/Common_image"
-                        android:layout_height="39dp"
-                        android:src="@drawable/special_pay" />
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    >
 
-                    <TextView
-                        style="@style/Common_textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/special" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/farmerservey_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/farmerservey_img"
+                                style="@style/Common_image"
+                                android:src="@drawable/survey" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_below="@+id/collection_img"
+                                android:text="@string/farmerserveyar" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/vendorservy_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/red"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                style="@style/Common_image"
+                                android:src="@drawable/survey3" />
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="@string/vendortransport" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
 
 
-
-        </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_weight="1"
-                android:gravity="center"
-
-                android:orientation="vertical">
-
-
-                <TextView
-                    style="@style/Common_textView_title_big"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-android:layout_margin="@dimen/margin_5"
-                    android:text="@string/survey"
-                    android:textColor="@color/colorOrange" />
 
 
             </LinearLayout>
-
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_100dp"
-                android:layout_marginBottom="3dp"
-                android:weightSum="1"
-
-                android:layout_weight="3"
-                android:orientation="horizontal"
-                >
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/farmerservey_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/farmerservey_img"
-                            style="@style/Common_image"
-                            android:src="@drawable/survey" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:maxLines="1"
-                            android:layout_below="@+id/collection_img"
-                            android:text="@string/farmerserveyar" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/vendorservy_button"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:layout_weight="0.5"
-                    android:background="@color/red"
-                    android:elevation="8dp"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    app:cardCornerRadius="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-
-                            style="@style/Common_image"
-                            android:src="@drawable/survey3" />
-
-                        <TextView
-                            style="@style/Common_textView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:text="@string/vendortransport" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-
-
-
-
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>-->

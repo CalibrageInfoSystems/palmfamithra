@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="in.calibrage.palm360fa"
-    android:versionCode="24"
-    android:versionName="24.0"> <!--7th march 2024-->
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature

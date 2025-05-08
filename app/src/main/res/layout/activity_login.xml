@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/logoLayout"
             android:layout_gravity="center"
-            android:background="@drawable/palm_fa_mitra">
+            android:background="@drawable/palmfamitra">
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,19 +50,19 @@
                     android:id="@+id/userName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="User Name"
+                    android:text="@string/user_name"
                     style="@style/textbasic_title"
                     android:maxLines="1"
                     android:layout_marginBottom="5dp"/>
 
                 <EditText
                     android:id="@+id/username_edittxt"
-
+                    android:paddingStart="5dp"
                     style="@style/editTxt_normal"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginBottom="15dp"
-                    android:hint="User Name"
+                    android:hint="@string/user_name"
                     android:text=""
                     android:maxLines="1" />
             </LinearLayout>
@@ -78,7 +78,7 @@
                     style="@style/textbasic_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Password"
+                    android:text="@string/password"
                     android:maxLines="1"
                     android:layout_marginBottom="5dp"/>
 
@@ -87,8 +87,9 @@
                     style="@style/editTxt_normal"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:paddingStart="5dp"
                     android:layout_marginBottom="20dp"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     android:text=""
                     android:maxLines="1" />

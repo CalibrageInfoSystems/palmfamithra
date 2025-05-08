@@ -67,7 +67,7 @@
 
     <string name="recommendationss">Crop Maintenance Visits</string>
 
-    <string name="payments">Farmer Passbook</string>
+    <string name="payments">Grower Ledger</string>
 
     <string name="bank_details">Bank Details</string>
 
@@ -636,7 +636,7 @@
 
     <string name="vehicle_Number">Vehicle Number</string>
 
-    <string name="collection">FFB Collections</string>
+    <string name="collection">Grower Collections</string>
 
     <string name="collectionCenter">Collection Center</string>
 

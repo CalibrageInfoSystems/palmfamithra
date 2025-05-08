@@ -35,11 +35,11 @@
         <!-- Logo -->
         <RelativeLayout
             android:id="@+id/logoLayout"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/palm_fa_mitra"/>
-        <TextView
+            android:background="@drawable/palmfamitra"/>
+     <!--   <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -47,7 +47,7 @@
             android:text="@string/welcome"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="25dp" />
+            android:textSize="25dp" />-->
 
 
         <!--    <EditText-->

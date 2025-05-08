@@ -48,9 +48,9 @@ import java.util.List;
 import java.util.Locale;
 
 public class HomeActivity extends AppCompatActivity {
-LinearLayout Labour,pole,fertilizer,loan,visit,quickpay,collections,payments,crop,special_button,vendorservy_button,farmerservey_button, bioLab,trans_button,edibleoil_button;
-ImageView logout,ic_request;
-TextView dialogMessage;
+    LinearLayout Labour, pole, fertilizer, loan, visit, quickpay, collections, payments, crop, special_button, vendorservy_button, farmerservey_button, bioLab, trans_button, edibleoil_button;
+    ImageView logout, ic_language;
+    TextView dialogMessage;
     boolean doubleBackToExitPressedOnce = false;
     private Button ok_btn, cancel_btn;
     LoginResponse created_user;
@@ -60,7 +60,8 @@ TextView dialogMessage;
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 100;
     private static final String API_KEY = "2f56179db0d8e7cb63a4396f80d7c4f8";
-    LinearLayout special_payl,spe_border;
+    LinearLayout special_payl, spe_border;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,22 +84,24 @@ TextView dialogMessage;
 
     private void initViews() {
 
-        Labour=findViewById(R.id.labour_button);
-        pole=findViewById(R.id.pole_button);
-        fertilizer=findViewById(R.id.fertlizer_button);
-        loan=findViewById(R.id.loan_button);
-        visit=findViewById(R.id.visit_button);
-        quickpay=findViewById(R.id.Quickpay_button);
-        collections=findViewById(R.id.collections_button);
-        payments=findViewById(R.id.payments_button);
-        crop=findViewById(R.id.recommendations_button);
-       // special_button=findViewById( R.id.special_button);
-        vendorservy_button=findViewById( R.id.vendorservy_button);
-        farmerservey_button=findViewById( R.id.farmerservey_button);
-        bioLab=findViewById(R.id.bioLab_button);
-        trans_button=findViewById( R.id.trans_button);
-        edibleoil_button=findViewById( R.id.edibleoil_button);
-       // special_payl = findViewById(R.id.special_payl);
+        Labour = findViewById(R.id.labour_button);
+        pole = findViewById(R.id.pole_button);
+        fertilizer = findViewById(R.id.fertlizer_button);
+        loan = findViewById(R.id.loan_button);
+        visit = findViewById(R.id.visit_button);
+        quickpay = findViewById(R.id.Quickpay_button);
+        collections = findViewById(R.id.collections_button);
+        payments = findViewById(R.id.payments_button);
+        crop = findViewById(R.id.recommendations_button);
+        // special_button=findViewById( R.id.special_button);
+        vendorservy_button = findViewById(R.id.vendorservy_button);
+        farmerservey_button = findViewById(R.id.farmerservey_button);
+        bioLab = findViewById(R.id.bioLab_button);
+        trans_button = findViewById(R.id.trans_button);
+        edibleoil_button = findViewById(R.id.edibleoil_button);
+        logout = findViewById(R.id.logout);
+        ic_language = findViewById(R.id.ic_language);
+        // special_payl = findViewById(R.id.special_payl);
         //spe_border = findViewById(R.id.spe_border);
         textView = findViewById(R.id.weather);
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
@@ -195,21 +198,21 @@ TextView dialogMessage;
     private void setViews() {
         created_user = SharedPrefsData.getCreatedUser(HomeActivity.this);
 
-        activityRights= created_user.getResult().getUserInfos().getActivityRights();
-      if(activityRights.contains("59")){
-          //special_payl.setVisibility(View.VISIBLE);
-         // spe_border.setVisibility(View.VISIBLE);
-          //Toast.makeText(this, "Have Special Fee" , Toast.LENGTH_SHORT).show();
-      }else{
-          //special_payl.setVisibility(View.GONE);
-          //spe_border.setVisibility(View.GONE);
-        //  Toast.makeText(this, "haven't special fee: " , Toast.LENGTH_SHORT).show();
-      }
+        activityRights = created_user.getResult().getUserInfos().getActivityRights();
+        if (activityRights.contains("59")) {
+            //special_payl.setVisibility(View.VISIBLE);
+            // spe_border.setVisibility(View.VISIBLE);
+            //Toast.makeText(this, "Have Special Fee" , Toast.LENGTH_SHORT).show();
+        } else {
+            //special_payl.setVisibility(View.GONE);
+            //spe_border.setVisibility(View.GONE);
+            //  Toast.makeText(this, "haven't special fee: " , Toast.LENGTH_SHORT).show();
+        }
         collections.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Collection");
+                intent.putExtra("RequestType", "Collection");
                 startActivity(intent);
             }
         });
@@ -219,7 +222,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","crop");
+                intent.putExtra("RequestType", "crop");
                 startActivity(intent);
             }
         });
@@ -227,7 +230,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Payment");
+                intent.putExtra("RequestType", "Payment");
                 startActivity(intent);
 
             }
@@ -237,10 +240,10 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Labour Request");
+                intent.putExtra("RequestType", "Labour Request");
                 startActivity(intent);
 
-                
+
             }
         });
 
@@ -249,7 +252,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Equipment");
+                intent.putExtra("RequestType", "Equipment");
                 startActivity(intent);
 
             }
@@ -258,7 +261,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Fertilizer");
+                intent.putExtra("RequestType", "Fertilizer");
                 startActivity(intent);
 
             }
@@ -267,7 +270,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","edibleoil");
+                intent.putExtra("RequestType", "edibleoil");
                 startActivity(intent);
 
             }
@@ -276,7 +279,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","QuickPay");
+                intent.putExtra("RequestType", "QuickPay");
                 startActivity(intent);
             }
         });
@@ -284,7 +287,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Visit");
+                intent.putExtra("RequestType", "Visit");
                 startActivity(intent);
 
             }
@@ -293,7 +296,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","Loan");
+                intent.putExtra("RequestType", "Loan");
                 startActivity(intent);
 
             }
@@ -303,7 +306,7 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                intent.putExtra("RequestType","BioLab");
+                intent.putExtra("RequestType", "BioLab");
                 startActivity(intent);
 
             }
@@ -319,7 +322,6 @@ TextView dialogMessage;
 
             }
         });*/
-
 
 
         vendorservy_button.setOnClickListener(new View.OnClickListener() {
@@ -346,26 +348,25 @@ TextView dialogMessage;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-         intent.putExtra("RequestType","Transport");
+                intent.putExtra("RequestType", "Transport");
                 startActivity(intent);
 
             }
         });
-//        logout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                logOutDialog();
-//            }
-//        });
-//        ic_request.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(HomeActivity.this, myRequest_Activity.class);
-//                startActivity(intent);
-//
-//            }
-//        });
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                logOutDialog();
+            }
+        });
+        ic_language.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showLanguageDialog();
+
+            }
+        });
     }
 
     private void logOutDialog() {
@@ -385,8 +386,8 @@ TextView dialogMessage;
         ok_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // updateResources(getApplicationContext(), "en-US");
-               SharedPrefsData.getInstance(getApplicationContext()).ClearData(getApplicationContext());
+                // updateResources(getApplicationContext(), "en-US");
+                SharedPrefsData.getInstance(getApplicationContext()).ClearData(getApplicationContext());
                 SharedPrefsData.putBool(HomeActivity.this, Constants.IS_LOGIN, false);
                 Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -409,11 +410,13 @@ TextView dialogMessage;
         });
         dialog.show();
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.options_menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
@@ -440,48 +443,98 @@ TextView dialogMessage;
     private void logOutDialog_farmer() {
 
 
-
-            final Dialog dialog = new Dialog(HomeActivity.this, R.style.DialogSlideAnim);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setCancelable(false);
-            dialog.setContentView(R.layout.dialog_logout);
-            dialogMessage = dialog.findViewById(R.id.dialogMessage);
-            dialogMessage.setText(getString(R.string.alert_logout));
-            cancel_btn = dialog.findViewById(R.id.cancel_btn);
-            ok_btn = dialog.findViewById(R.id.ok_btn);
+        final Dialog dialog = new Dialog(HomeActivity.this, R.style.DialogSlideAnim);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.dialog_logout);
+        dialogMessage = dialog.findViewById(R.id.dialogMessage);
+        dialogMessage.setText(getString(R.string.alert_logout));
+        cancel_btn = dialog.findViewById(R.id.cancel_btn);
+        ok_btn = dialog.findViewById(R.id.ok_btn);
 /**
  * @param OnClickListner
  */
-            ok_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    // updateResources(getApplicationContext(), "en-US");
-                    //  SharedPrefsData.getInstance(getApplicationContext()).ClearData(getApplicationContext());
+        ok_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // updateResources(getApplicationContext(), "en-US");
+                //  SharedPrefsData.getInstance(getApplicationContext()).ClearData(getApplicationContext());
 
 
-                    SharedPrefsData.putBool(HomeActivity.this, Constants.IS_Former_LOGIN, false);
-                    Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                    finish();
+                SharedPrefsData.putBool(HomeActivity.this, Constants.IS_Former_LOGIN, false);
+                Intent intent = new Intent(HomeActivity.this, Farmar_Login.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finish();
 
 
-                }
-            });
+            }
+        });
 
 /**
  * @param OnClickListner
  */
-            cancel_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    dialog.dismiss();
-                }
-            });
-            dialog.show();
-        }
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
+    private void showLanguageDialog() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialog_language_selection);
+        dialog.setCancelable(true);
+
+        LinearLayout rbEng = dialog.findViewById(R.id.english);
+        LinearLayout rbTelugu = dialog.findViewById(R.id.telugu);
+        LinearLayout rbKannada = dialog.findViewById(R.id.kannada);
+
+        // Reset all backgrounds to gray first
+        View.OnClickListener listener = v -> {
+            rbEng.setBackgroundResource(R.drawable.border_gray);
+            rbTelugu.setBackgroundResource(R.drawable.border_gray);
+            rbKannada.setBackgroundResource(R.drawable.border_gray);
+
+            // Highlight selected
+            v.setBackgroundResource(R.drawable.border_green);
+
+            if (v.getId() == R.id.english) {
+                updateResources(HomeActivity.this, "en-US");
+                SharedPrefsData.getInstance(HomeActivity.this).updateIntValue(HomeActivity.this, "lang", 1);
+                Intent refresh = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(refresh);
+                finish();
+
+            } else if (v.getId() == R.id.telugu) {
+                updateResources(HomeActivity.this, "te");
+                SharedPrefsData.getInstance(HomeActivity.this).updateIntValue(HomeActivity.this, "lang", 2);
+                Intent refresh = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(refresh);
+                finish();
+
+            } else if (v.getId() == R.id.kannada) {
+                updateResources(HomeActivity.this, "kan");
+                SharedPrefsData.getInstance(HomeActivity.this).updateIntValue(HomeActivity.this, "lang", 3);
+                Intent refresh = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(refresh);
+                finish();
+
+            }
+
+            dialog.dismiss();
+        };
+
+        rbEng.setOnClickListener(listener);
+        rbTelugu.setOnClickListener(listener);
+        rbKannada.setOnClickListener(listener);
+
+        dialog.show();
+    }
 
 
     private void selectLanguage() {
@@ -494,8 +547,8 @@ TextView dialogMessage;
         dialog.setTitle("");
 
         // set the custom forgotPasswordDialog components - text, image and button
-        final TextView rbEng = dialog.findViewById(R.id.rbEng);
-        final TextView rbTelugu = dialog.findViewById(R.id.rbTelugu);
+        final LinearLayout rbEng = dialog.findViewById(R.id.rbEng);
+        final LinearLayout rbTelugu = dialog.findViewById(R.id.rbTelugu);
         final TextView rbKannada = dialog.findViewById(R.id.rbkannada);
         View view =dialog.findViewById(R.id.view);
         View view2 =dialog.findViewById(R.id.view2);

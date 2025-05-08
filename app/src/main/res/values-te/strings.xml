@@ -571,7 +571,7 @@
 
     <!-- <string name="amount_labour"> క్యు) మొత్తం(రూ.)\n(సి+ఎఫ్+ఐ+ఎల్+ఎన్-పి)</string>-->
 
-    <string name="biolab">Bio Lab</string>
+    <string name="biolab">బయో ల్యాబ్</string>
     <string name="req_date">అభ్యర్థించిన తేదీ</string>
 
     <string name="serviceType">సేవా రకం</string>
@@ -986,8 +986,8 @@
     <string name="Sprayer">Sprayer</string>
     <string name="Puddler">Puddler</string>
     <string name="survey">Surveyer</string>
-    <string name="farmerserveyar">Farmer Transport service questioner</string>
-    <string name="vendortransport">Vendor Transport Service</string>
+    <string name="farmerserveyar">రైతు రవాణా సేవ ప్రశ్నకర్త</string>
+    <string name="vendortransport">విక్రేత రవాణా సేవ</string>
     <string name="qr">QR</string>
     <string name="validateAttachments">Please Select do you  Have Attachments or not</string>
     <string name="validatevehicleAttachments">Please Select Vehicle Attachments</string>
@@ -1029,7 +1029,7 @@
     <string name="trnstotal_amt">Total Transport  Amount (Rs)</string>
     <string name="success_edible">Edible Oil Request Submitted Successfully</string>
     <string name="endusermsgnew">An Error occured while raising a fertilizer request</string>
-    <string name="edibleoil">Edible Oil</string>
+    <string name="edibleoil">తినదగిన నూనె</string>
     <string name="Categorytype">Category Type</string>
 
 </resources>

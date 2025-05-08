@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appbg"
+
     tools:context="in.calibrage.palm360fa.Views.SplashActivity"
 
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/half_black2" />
+       />
 
     <ImageView
         android:id="@+id/img_logo"
@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_logo" />
+        android:src="@drawable/palm360logo" />
 
     <in.calibrage.palm360fa.common.TypeWriter
 
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/img_logo"
         android:gravity="center"
+        android:visibility="gone"
         android:text="3F OIL PALM"
         android:textColor="@color/colorred"
         android:textSize="24dp"
@@ -39,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_name"
+        android:visibility="gone"
         android:gravity="center"
         android:text="Sowing for a Better Future"
         android:textColor="@color/colorOrange"
